@@ -52,7 +52,7 @@ client.on('message', message => {
       "Yeah, Kitty's just more unique on the outside, where we can see it. Some of us are more unique on the inside. In our hearts!\nSome of our hearts are big, and some are small, and some of them are dark, and still, and stopped beating long ago, and yet somehow we manage to slog through this shadow puppet theater day in and day out, waiting for the merciful velvet curtain of death.\nOn 6/11/2003",
       "Three cheers for Maloof.\nHip hip hurray!\nHip hip hurray!\nHip hip-- oh forget it. He is kind of a baby.\nOn 5/23/2003",
       "Where was I? Oh yeah...\nHip hip, hurray!\nOn 6/20/2003",
-      
+
     ];
     var clemSelect = clemArray[Math.floor(Math.random()*clemArray.length)];
     message.channel.sendMessage('Clem Foote said:');
@@ -61,8 +61,8 @@ client.on('message', message => {
 
   if (message.content.startsWith(chat + 'bobby')) {
     var bobbyArray = [
-      'Punch face!',
-      'Punch face 2!'
+      "Who cares about shooting? Let's see how good you are with your fists Hoofburger.\nOn 6/15/2003",
+      "Benny, dude, I thought I told you, not every time, alright? Wait for the signal.\nOn 6/15/2003"
     ];
     var bobbySelect = bobbyArray[Math.floor(Math.random()*bobbyArray.length)];
     message.channel.sendMessage('Bobby Zilch said:');
