@@ -157,39 +157,46 @@ client.on('message', message => {
     message.channel.sendMessage(mikhailSelect);
   }
   
-    //messages asking for elka's friendster lines
-  if (message.content.startsWith(chat + 'elka')) {
-    var elkaArray = [
-      "James here is the best boyfriend a girl could have. He's sensitive, strong, handsome, and polite. Not like some people I could name. Definitely an upgrade over my old boyfriend.\nI see a great future for us together, Nils!\nOn 5/29/2003",
-      "I meant JAMES! Not Nils! Definitely not Nils! I certainly did NOT mean to... it was the spell checker, I swear!\nOn 5/29/2003",
-      "Shut up, Nils. No one's talking to you.\nHey, James, I noticed you didn't have any pictures of me in your photos page. Here, I'll mail you some, JAMES.\nOn 5/29/2003",
-      "Oh, you're in trouble now, Benjamin. My boyfriend James is NOT going to put up with that kind of insult. Right James?\nOn 6/02/2003",
-      "Hey boyfriend, those pictures aren't up yet. What's the matter? Having a problem picking just three? You can put them all up if you want! ;) I won't mind!\nOn 6/13/2003",
-      "J.T. knows that a man's first priority is his girlfriend, Chops. He doesn't always have time for childish pursuits like \"chilling\" and \"bro-ing out\" anymore.\nOn 6/21/2003",
-      "I see bad things in the future for you, Mr. Sweetwind, if you don't mind your manners. ;)\nOn 6/22/2003",
-      "I went out with you. I... Elka Doom... went out with you... Nils the Pig. How did that happen?\nOn 6/02/2003",
-      "Okay NEWS FLASH everybody. I'm know that Nils and I were THE hot and heavy couple last year. But we are OFFICIALLY and PERMANANTLY\n\nB R O K E N   the F.  U P ! ! !\n\nYes, I know we seemed perfect for each other. I know you probably thought, \"Boy, they're going to be together forever because I'm sure Nils would do anything to keep that girl happy--he's so lucky to have her.\" But you'd be wrong! Suprise!\nWell that's the bad news. The good news is I'm OVER IT. And I'm happy to be single and looking forward to spending a long time by myself, learning who I am again, and just being okay with myself.\nP.S. Private message to Nils: \"Your loss!\"\nOn 6/03/2003",
-      "Who'd have thought lightning would strike the same girl twice? Well it has. I have found something even more special than what I had with this loser.\nMy NEW boyfriend is none other than James Theodore Hoofburger. Now HE is a real man, and he knows how to treat a lady.\nSorry Charlie, I mean, Nils!\nOn 6/04/2003",
-      "Just popping in to say how great everything is with James.\nIt's great!\nOn 6/05/2003",
-      "Oh, Nils. What happened between us? I don't understand. I saw the future and we were together. My predictions are never wrong! For a hundred years, my family has seen the future without fail! And yet, somehow it didn't work between us. Why?\nOn 6/06/2003",
-      "Okay, forget that last testimonial. I was being weak. Totally weak! I don't need Nils! The future is mine to create, and I'm to busy creating one with James to even think about Nils.\nOn 6/07/2003",
-      "Oh, I just thought of something. James can ride a horse. Isn't that great? I love horses.\nOn 6/08/2003",
-      "Oh, Nils. I miss you so much. Can't we just give it another chance? Please. I'll do anything. I'll change. I can change. Anything you want.\nOn 6/09/2003",
-      "Ha! What a difference a day makes! I hope you didn't take that last testimonial too seriously, because I was obviously just hallucinating. Or my heart was misdirecting my feelings for James into some screwed up internal mirage of you, or something like that. Well, never you mind about it. That phase has gone, like a 24 flu.\nOn 6/10/2003",
-      "Okay, I just have one question. Did I get too close? Was that it? Nils, did I pressure you in some way? Not that I care, but I'd just like to know.\nOn 6/11/2003",
-      "Nils, I had a long talk just now with my mother about this and she had this whole theory about why we both push each other away. I'd love to tell you about it. It's pretty interesting.\nOn 6/12/2003",
-      "You know, what you said to me today was so rude, I just want to say thank you. Thank you for reminding me why we broke up: because you're a pig.\nOn 6/13/2003",
-      "Oh, Nils. I AM happy with James, but I'm just so worried about you. Are you ever going to find someone? Are you going to end up lonely? Who's going to take care of you?\nOn 6/14/2003",
-      "Nils, last time I talked to your mom she asked me about that coffee cake I made for that one time, so I wrote out the recipe and put it under your pillow.\nWhile I was there, I couldn't help but notice that it smells like you changed shampoo. I don't know what you're using now, but are you sure it has enough dandruff protection for you?\nOn 6/15/2003",
-      "Talking to Crystal about you and me, I had a revelation about us and our relationship. Can't wait to tell you about it.\nOn 6/16/2003",
-      "Okay, Nils. You said that even though we've broken up you wanted to stay friends. Well friendships take work, and I feel like as far as this one goes, I'm the only one putting any work into it. My therapist says I'm a "pleaser" so it's in my nature, but I honestly don't know how much I can take. If you don't start putting more into this thing, then it's just not going to work. And I'd be extremely sad if we weren't able to salvage at least a friendship out of this.\nOn 6/17/2003",
-      "Okay seriously, I'm about to stop if you don't respond.\nOn 6/18/2003",
-      "I'm so mad at you right now. I'm so glad we broke up. I've written your mother another long letter about it and put it under your pillow. Please make sure she gets it.\nOn 6/19/2003",
-      "Oh... Nils. Nils...\nOn 6/20/2003",
+   //messages asking for clem's campster lines
+  if (message.content.startsWith(chat + 'clem')) {
+    var clemArray = [
+      'Speck of dust?\nOn 6/17/2003',
+      'From a mile away!\nOn 6/17/2003',
+      'Ants suck! J.T. Rocks!\nOn 6/17/2003',
+      "Yeah, it will be awesome!!!!!!!! If we get enough cheers together, maybe someone will start a sports team for us to cheer on.\nOn 6/9/2003",
+      "Ah Crystal, I guess it's just not going to work. Doesn't seem like anyone here's interested in real sports--it's all mind, mind, mind!\nBut that's okay. How would you ever appreciate the sweet taste of victory if we didn't also know the constant, comforting tonic of failure?\nOn 6/17/2003",
+      "That goes ditto for me!!! Double Ditto!!! OMFG!\nOn 5/21/2003",
+      "Not half as good as you, Crystal! Let's go talk to Coach Oleander right now! I'll bet he'll flip over the idea! :D! Maybe even literally! :D! :D!\nOn 5/19/2003",
+      "Yeah, like if we were... like killed in some freak accident or something.\nOn 6/17/2003",
+      "Omg! Elton is so good at canoeing!\nOn 5/24/2003",
+      "Total omg! Elton is like the MASTER of the telekinetic canoe!\nOn 5/24/2003",
+      "He's so much better than me!\nOn 5/24/2003",
+      "No, I'm terrible at canoeing. My dad says I'm a total idiot when it comes to canoeing. And most other things. He said he'd rather ride a seal into a pool of sharks than ride in a canoe into a lake with me. Sometimes I wonder if he's right--if I am to stupid for this world.\nOn 5/24/2003",
+      "Totally. But I guess Elton's pretty stoked.\nOn 5/24/2003",
+      "And his picture perfect childhood full of love and support! Yeah, Elton!\nOn 5/24/2003",
+      "I wish I were special like Dogen! And I had a hat that could kill people!\on 6/18/2003",
+      "But I'd only use it for good!\nOn 6/18/2003",
+      "Crystal, I think he means hurting other people.\nOn 6/13/2003",
+      "Hey hey hey there! That's no way to talk! We can still have a club! Just you and me! My brain hurts too! I want to die too! Sometimes. But then again sometimes I feel GGGGGGGRRRRREEEEEAAAT!!!\nOn 6/13/2003",
+      "Your shirt!\nOn 6/19/2003",
+      "Yeah, where did you get it? Mervyn's? Man they have the best shirts there. I gotta get my mom to take me to Mervyn's some time.\nWooo! Go Benny!\nOh, so anyhew... you're friends with Bobby, right? You know, he is the only person at camp who's not on our friends list. We're friends with EVERYONE else in camp. Super good friends in fact!\nOn 6/19/2003",
+      "Don't listen to him Crystal. He's just making fun of us!\nOn 6/19/2003",
+      "Crystal, there is no true way to be best friends forever in this finite universe. There is no 'forever' here. Only the world that lies beyond this one is vast enough to contain a best-friendship as infinite as ours. Maybe it is time we went there.\nOn 6/19/2003",
+      "You put the YOU in Unique! You and Quentin are both winners who are decidedly different, positively popular, and outrageously outrageous!!!!\nOn 6/18/2003",
+      "Yeah! Total team! With his canoeing skills and your super invisibility, together you could be like... like... Team Peek-a-boo Canoe!\nOn 5/29/2003",
+      "Ha! That's great too! Bobby, where do you get your ideas?\nOn 5/29/2003",
+      ">:| !!!\nOn 5/29/2003",
+      "This girl is the best! What's not to like? Crystal is so cool, I don't even know why she hangs out with a piece of dirt like me. Here's some love for ya girl: <3<3<3<3!!!\nOn 5/14/2003",
+      "Hey, Crystal! I just wanted you to know that I called a professional geologist and he agrees: you rock!\nGet it?\nOn 5/26/2003",
+      "Hey spontaneous group activities are great!\nOn 6/14/2003",
+      "OMG we have so much fun at camp! This is the best year ever! I could die now and be totally happy! I'm just saying it wouldn't be a complete tragedy if we died this year, because then we would have ended on a high note!\nOn 6/19/2003",
+      "Yeah, Kitty's just more unique on the outside, where we can see it. Some of us are more unique on the inside. In our hearts!\nSome of our hearts are big, and some are small, and some of them are dark, and still, and stopped beating long ago, and yet somehow we manage to slog through this shadow puppet theater day in and day out, waiting for the merciful velvet curtain of death.\nOn 6/11/2003",
+      "Three cheers for Maloof.\nHip hip hurray!\nHip hip hurray!\nHip hip-- oh forget it. He is kind of a baby.\nOn 5/23/2003",
+      "Where was I? Oh yeah...\nHip hip, hurray!\nOn 6/20/2003",
     ];
-    var elkaSelect = elkaArray[Math.floor(Math.random()*elkaArray.length)];
-    message.channel.sendMessage('Elka Doom said:');
-    message.channel.sendMessage(elkaSelect);
+    var clemSelect = clemArray[Math.floor(Math.random()*clemArray.length)];
+    message.channel.sendMessage('Clem Foote said:');
+    message.channel.sendMessage(clemSelect);
   }
   
     //messages asking for dogen's friendster lines
