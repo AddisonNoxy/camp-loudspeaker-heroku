@@ -155,6 +155,58 @@ client.on('message', message => {
     message.channel.sendMessage('Mikhail Bulgakov said:');
     message.channel.sendMessage(mikhailSelect);
   }
+  
+    //messages asking for elka's friendster lines
+  if (message.content.startsWith(chat + 'elka')) {
+    var elkaArray = [
+      "James here is the best boyfriend a girl could have. He's sensitive, strong, handsome, and polite. Not like some people I could name. Definitely an upgrade over my old boyfriend.\nI see a great future for us together, Nils!\nOn 5/29/2003",
+      "I meant JAMES! Not Nils! Definitely not Nils! I certainly did NOT mean to... it was the spell checker, I swear!\nOn 5/29/2003",
+      "Shut up, Nils. No one's talking to you.\nHey, James, I noticed you didn't have any pictures of me in your photos page. Here, I'll mail you some, JAMES.\nOn 5/29/2003",
+      "Oh, you're in trouble now, Benjamin. My boyfriend James is NOT going to put up with that kind of insult. Right James?\nOn 6/02/2003",
+      "Hey boyfriend, those pictures aren't up yet. What's the matter? Having a problem picking just three? You can put them all up if you want! ;) I won't mind!\nOn 6/13/2003",
+      "J.T. knows that a man's first priority is his girlfriend, Chops. He doesn't always have time for childish pursuits like \"chilling\" and \"bro-ing out\" anymore.\nOn 6/21/2003",
+      "I see bad things in the future for you, Mr. Sweetwind, if you don't mind your manners. ;)\nOn 6/22/2003",
+      "I went out with you. I... Elka Doom... went out with you... Nils the Pig. How did that happen?\nOn 6/02/2003",
+      "Okay NEWS FLASH everybody. I'm know that Nils and I were THE hot and heavy couple last year. But we are OFFICIALLY and PERMANANTLY\n\nB R O K E N   the F.  U P ! ! !\n\nYes, I know we seemed perfect for each other. I know you probably thought, \"Boy, they're going to be together forever because I'm sure Nils would do anything to keep that girl happy--he's so lucky to have her.\" But you'd be wrong! Suprise!\nWell that's the bad news. The good news is I'm OVER IT. And I'm happy to be single and looking forward to spending a long time by myself, learning who I am again, and just being okay with myself.\nP.S. Private message to Nils: \"Your loss!\"\nOn 6/03/2003",
+      "Who'd have thought lightning would strike the same girl twice? Well it has. I have found something even more special than what I had with this loser.\nMy NEW boyfriend is none other than James Theodore Hoofburger. Now HE is a real man, and he knows how to treat a lady.\nSorry Charlie, I mean, Nils!\nOn 6/04/2003",
+      "Just popping in to say how great everything is with James.\nIt's great!\nOn 6/05/2003",
+      "Oh, Nils. What happened between us? I don't understand. I saw the future and we were together. My predictions are never wrong! For a hundred years, my family has seen the future without fail! And yet, somehow it didn't work between us. Why?\nOn 6/06/2003",
+      "Okay, forget that last testimonial. I was being weak. Totally weak! I don't need Nils! The future is mine to create, and I'm to busy creating one with James to even think about Nils.\nOn 6/07/2003",
+      "Oh, I just thought of something. James can ride a horse. Isn't that great? I love horses.\nOn 6/08/2003",
+      "Oh, Nils. I miss you so much. Can't we just give it another chance? Please. I'll do anything. I'll change. I can change. Anything you want.\nOn 6/09/2003",
+      "Ha! What a difference a day makes! I hope you didn't take that last testimonial too seriously, because I was obviously just hallucinating. Or my heart was misdirecting my feelings for James into some screwed up internal mirage of you, or something like that. Well, never you mind about it. That phase has gone, like a 24 flu.\nOn 6/10/2003",
+      "Okay, I just have one question. Did I get too close? Was that it? Nils, did I pressure you in some way? Not that I care, but I'd just like to know.\nOn 6/11/2003",
+      "Nils, I had a long talk just now with my mother about this and she had this whole theory about why we both push each other away. I'd love to tell you about it. It's pretty interesting.\nOn 6/12/2003",
+      "You know, what you said to me today was so rude, I just want to say thank you. Thank you for reminding me why we broke up: because you're a pig.\nOn 6/13/2003",
+      "Oh, Nils. I AM happy with James, but I'm just so worried about you. Are you ever going to find someone? Are you going to end up lonely? Who's going to take care of you?\nOn 6/14/2003",
+      "Nils, last time I talked to your mom she asked me about that coffee cake I made for that one time, so I wrote out the recipe and put it under your pillow.\nWhile I was there, I couldn't help but notice that it smells like you changed shampoo. I don't know what you're using now, but are you sure it has enough dandruff protection for you?\nOn 6/15/2003",
+      "Talking to Crystal about you and me, I had a revelation about us and our relationship. Can't wait to tell you about it.\nOn 6/16/2003",
+      "Okay, Nils. You said that even though we've broken up you wanted to stay friends. Well friendships take work, and I feel like as far as this one goes, I'm the only one putting any work into it. My therapist says I'm a "pleaser" so it's in my nature, but I honestly don't know how much I can take. If you don't start putting more into this thing, then it's just not going to work. And I'd be extremely sad if we weren't able to salvage at least a friendship out of this.\nOn 6/17/2003",
+      "Okay seriously, I'm about to stop if you don't respond.\nOn 6/18/2003",
+      "I'm so mad at you right now. I'm so glad we broke up. I've written your mother another long letter about it and put it under your pillow. Please make sure she gets it.\nOn 6/19/2003",
+      "Oh... Nils. Nils...\nOn 6/20/2003",
+      "Clem and Crystal are an amazing couple, and I admire them for taking things slow. I hope someday to have as much in common with my boyfriend as these two.\nOn 6/15/2003",
+      "Nils, I'm sure Elton doesn't need romantic advice from someone as ignorant on the topic as you! If you're doing this to get back at me, leave poor Elton out of it!\nSorry, Elton. I know you have romantic trouble enough as it is.\nOn 5/27/2003",
+      "AND it makes you look real good, cowboy! That's why you're my boyfriend!\nOn 6/20/2003",
+      "Chloe, okay. Nothing negative. Just girlfriend to girlfriend. I'm just worried that if you keep that helmet on your head for too long, you're going to prevent your hair from becoming as healthy and full bodied as I know it could be. If you'd like, some evening I could come over to your cabin, you could take off your helmet and I could show you some of the excellent Amway haircare products my mom sent me to show around. They really are quite good.\nOn 6/16/2003",
+      "Chloe, ignore him please.\nOn 6/16/2003",
+      "Well, that's okay, Phoebe. That dumb old band was taking up too much of J.T's time anyway.\nOn 6/20/2003",
+      "All those times you said you were at practice...\nWhere were you?\nYou were just hiding out in the woods chewing tobacco with Sweetwind, weren't you? WEREN'T YOU? Oh, men! Men and their lies! At least I KNEW Nils was a pig.\nOh, Nils. Nils. See what you have sentenced me to?\nOn 6/20/2003",
+      "Nice try. You're not going to make me jealous this time. Milka is totally in love with Elton now. God, when are you going to get over me?\nAnd Yoo-Hoo Nils? Really? Now you're just trying to be mean. You KNOW how much I love You-hoo!\nOn 6/16/2003",
+      "Crap. I meant YOO-hoo.\nOn 6/17/2003",
+      "Crystal, we HAVE to talk. You will not believe what Nils just said to me. I just can't figure out where his intimacy issues are coming from. Why does this always happen to ME? Anyway, lets get together soon.\nOn 6/06/2003",
+      "I will say this for Kitty. Her clothes are... unique.\nOn 6/09/2003",
+      "God, Nils you make me so sick some times. What the emoticon for barfing?  :O===?\nOn 6/18/2003",
+      "Maloof is such a sweet little thing. He's just so little and cute I want to pick him up and be mean to him!\nOn 5/26/2003",
+      "I meant hug! I want to pick him up and hug him!\nOn 5/27/2003",
+      "I was always nice to Maloof! You remember that, right Maloof? Right??\nOn 6/02/2003",
+      "Melvin, you know that song \"Puff the Magic Dragon?\" And how Jackie Paper had to learn how to let go of his favorite plaything because he knew it was time to grow up? Well, you should listen to that song whenever you're missing J.T., and when ever you hear the name \"Jackie\" I want you to imagine the name \"J.T.\" and whenever you hear the name \"Puff\" I want you to imagine you. I think it's time that you my friend, slowly sunk into your cave.\nOn 6/19/2003",
+      "Oh, James. James. How could you?\nOh, I was such a fool to leave Nils for this rube!\nOn 6/20/2003"
+    ];
+    var elkaSelect = elkaArray[Math.floor(Math.random()*elkaArray.length)];
+    message.channel.sendMessage('Elka Doom said:');
+    message.channel.sendMessage(elkaSelect);
+  }
 
   //messages asking for clem's campster lines
   if (message.content.startsWith(chat + 'clem')) {
