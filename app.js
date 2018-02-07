@@ -256,7 +256,7 @@ client.on('message', message => {
   if (message.content.startsWith(chat + 'bobby')) {
     var bobbyArray = [
       "Who cares about shooting? Let's see how good you are with your fists Hoofburger.\nOn 6/15/2003",
-      "Benny, dude, I thought I told you, not every time, alright? Wait for the signal.\nOn 6/15/2003"
+      "Benny, dude, I thought I told you, not every time, alright? Wait for the signal.\nOn 6/15/2003",
       "Ouch. Kicked when she's down. Ruthless... I'm proud of you my young Paduan learner.\nOn 6/07/2003",
       "Hey, dude. Much like Dr. Love here, I too, am concerned with your unfocused rage and violent energies. You need to channel that force into something more positive. Like say, being in my gang. Benny is efficient for hurting people's feelings and being annoying, but I really need in my corner is pure, dumb muscle.\nOn 5/21/2003",
       "And look at Benny here. He's small and some day one of these kids is going to TK his head off and there I'll there I'll be without an flunkie! So what do you say? Pay is 3% of all lunch money received, and all the smackdown you want to dish out.\nOn 6/22/2003",
