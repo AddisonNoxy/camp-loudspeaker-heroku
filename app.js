@@ -44,6 +44,91 @@ client.on('message', message => {
     message.channel.sendMessage('James Theodore Hoofburger said:');
     message.channel.sendMessage(jtSelect);
   }
+  
+    //messages asking for franke's friendster lines
+  if (message.content.startsWith(chat + 'franke')) {
+    var frankeArray = [
+      "Hey, cowboy! I love your hat. What do I have to do to wear it for a day, eh pardner?\nOn 6/11/2003",
+      ">:O!\nOn 6/11/2003",
+      "Hey, those shoes were a PRESCRIPTION from a DOCTOR, jerk!\nOn 6/13/2003",
+      "Dood, give it up, bro. She doesn't even know you're alive. You do NOT make her go, \"Huh!\" If anything, you make her go, \"ZZZzzz.\" You have got to move on. Somewhere out there is a really strange girl who is perfect for you and your freakiness. But seriously, you're embarrassing yourself here. It's sad. It's hard to watch.\nOn 5/26/2003",
+      "Oh, it's private, but it's between you and yourself, not you and \"Ms. Zanotto.\" (hee hee). But hey, whateva. I was just trying to save you some time Romeo. Keep typing. The whole girls' cabin is having a blast reading this!\nOn 5/26/2003",
+      "Ah ha ha ha! Oh, man. I want to stop watching, but I can't!\nOn 5/27/2003",
+      "Beyyotch, that's my boyfriend your talking about. ;)\nOn 5/17/2003",
+      "Uh, hang on there, Vern. I uh.. i meant \"future boyfriend\" like when we're older? And I'm a woman, and can give myself to you fully?  Like maybe... after you finish doing my boathouse cleaning chores for me?\nOn 5/17/2003",
+      "Oh, Vernon knows I'm not fast. Right Vernon? He doesn't want that kind of girl, does he?\nOn 5/30/2003",
+      "Man, why don't you just get married and get a barbie doll dream house together already?\nOn 6/14/2003",
+      "Yo Swamp Monster. My homework done yet?\nOn 6/17/2003",
+      "No, I'm seeing it too. He's got a hot little nose..\nOn 6/05/2003",
+      "Dude, that was-- oh never mind.\nOn 6/07/2003",
+      "Rrrrrrallllr!  (How do you spell that thing where you pretend to be a growling panther but all sexy style?) Rrrroowl?\n\nrrrRRrrrRRRRrrrow?\nOn 6/12/2003",
+      "Elton, baby. He's got nothing on you. You're special. Do you see me asking Quentin to do my homework? No. Only you. :)\n\nP.S. Hey, where the hell IS my homework?\nOn 6/10/2003",
+      "Yeah, I heard that they found you in the woods living in a tree, eating bugs, and when they brought you here you were speaking all in crazy Nell talk.\nOn 5/18/2003",
+      "Were you saying, \"Hey, where are my delicious bugs?\" AHAHAHAHA.\nOn 5/18/2003",
+      "Hey, Kitty. I think we should get the girls together for a little midnight skinny dip to cheer up Crystal! What do you say?\nOn 6/09/2003",
+      "This girl is the foxiest psychic I know. And the coolest dresser, and she knows everything there is to know about makeup. Girlfriend, you are the Queen of Camp Whispering Rock!!\nOn 5/22/2003",
+      "Just checking in with you, Baby Bubai! Stay gorgeous! <3<3!\nOn 5/27/2003",
+      "Uh maybe he just likes her for the same reason we all like Kitty? Because she's rad? And you're jealous?\nOn 6/07/2003",
+      "Hm, no people who can roll their tongue into a tube are definitely better.\nOn 6/14/2003",
+      "In summary, Kitty's the best. Agreed?\nOn 6/19/2003",
+      "Heh heh. Yeah, come on. You know you like it.\nOn 5/15/2003",
+      "Hey, Maloof you'll still come over right? Except I don't think we have a dress big enough for your friend. He'll have to wear a mu mu.\nOn 6/14/2003",
+      "Yeah! I've been practicing my Girl From Ipanema thing....\nOn 6/03/2003"
+    ];
+    var frankeSelect = frankeArray[Math.floor(Math.random()*frankeArray.length)];
+    message.channel.sendMessage('Franke Athens said:');
+    message.channel.sendMessage(frankeSelect);
+  }
+  
+    //messages asking for nils's friendster lines
+  if (message.content.startsWith(chat + 'nils')) {
+    var nilsArray = [
+      "J.T. I don't know what you're thinking man. But good luck, that's all I got to say.\nOn 5/29/2003",
+      "Well, first we'd have to shrink your head down a couple of sizes.\nOn 6/11/2003",
+      "Yeah, in the same way Franke's bitter about loosing those pediatric shoes she used to have to wear.\nOn 6/11/2003",
+      "Quentin, stop messing with what could be an awesome chick fight. I have a feeling someone's going to lose a halter top in this one and I'm not going to let you mess it up.\nOn 6/01/2003",
+      "Let me just say this about my ex-girlfriend Elka:\nStay away!\nNot because I'll get jealous--but for your own good. This chick is looney toons. Okay, don't say I didn't warn you.\nOn 5/26/2003",
+      "Hey, guys, guys! What's the big deal about Elka and me? She has a nice body, we dated, she's nuts, it ended... what's to get over? It's all good. She's J.T's prob now.\nSo, anyway, Phoebe, what you doing later?\nOn 6/06/2003",
+      "I like to play poker with Clem because he always screams \"yippie\" when he gets delt a good hand.\nYou see? And then I fold. That's how it works.\nOn 6/03/2003",
+      "Elton, I have a message for you, friend: Ladies are not worth the trouble. I'm telling you. You need to relax a bit, hang with the bros some more. Bros before ho's, man!\nOn 5/27/2003",
+      "Hey, go \"Fir\" it! Ha ha ha! Get it?\nBut don't say I didn't warn you...\nOn 5/28/2003",
+      "(gag)\nSo, Doeg. I'll bet since you put those kitty pictures up you get a lot more messages from chicks, right? You don't have to give me any details. I just want to know if it works. Dog to dog.\nOn 6/20/2003",
+      "Barge, do NOT let Elka mess with your head. It's one of her hobbies.\nOn 6/16/2003",
+      "Oh, that's the other thing she's really good at. Ignoring. Neglecting.\nUntil you start dating someone else that is, then she stops ignoring you pretty quick.\nOn 6/16/2003",
+      "Why hello, Ms. Love. Say, how did you get that name? Care to show me? I'll show you how we start fires where I'm from.\nOn 6/19/2003",
+      "Quentin, man. Leave some of the hotties for us uncharismatic guys, will ya?\nOn 6/15/2003",
+      "Hi, Milka. Hey, I know you like Quentin, or Elton, or whatever but I was wondering if you'd like to go on a walk down by the lake some time. My mom sent me some chocolate yoo-hoo that I could bring. Could be sweet. Let me know!\nOn 6/15/2003",
+      "Just like you Elka. Thinking of yourself when someone else is in need.\nHey, Crystal, speaking of your needs, if you need a shoulder to cry on, why don't you try mine?\nOn 6/07/2003",
+      "I'm there.\nOn 6/11/2003",
+      "Kitty, I don't get your fashions, but I think underneath them all is a really fine lady. Care to show me?\nOn 6/17/2003",
+      "Maloof cries a lot, but he cries pretty quietly. Usually if it's late he does it under his pillow so we can still sleep, and that's pretty cool.\nOn 6/12/2003",
+      "Hey Maloof, man. I was wrong when I said you couldn't have the top bunk because you were such a bed wetter. You can totally have it. I can just sleep in my rain coat or something. Not a problem.\nOn 6/08/2003",
+      "Chops, dude, when we gonna go out on the prowl my man? Hit the town, unleash ourselves on the ladies? Maybe check out what's going on at the girls' cabin? You can be my wingman.\nOn 5/29/2003",
+
+    ];
+    var nilsSelect = nilsArray[Math.floor(Math.random()*nilsArray.length)];
+    message.channel.sendMessage('Nils Lutefisk said:');
+    message.channel.sendMessage(nilsSelect);
+  }
+  
+    //messages asking for lili's friendster lines
+  if (message.content.startsWith(chat + 'lili')) {
+    var liliArray = [
+      "Franke is a li'l firecracker. There I made a testimonial. Can I go now?\nOn 5/26/2003",
+      "Dogen is the nicest guy at camp. I wish I had a hat like dogen.\nOn 6/03/2003",
+      "Dogen Boole:\n\nCool\nJewel.\nYule.\nRule.\n\nI win!\nOn 6/12/2003",
+      "Is that good or bad, Chloe?\nOn 6/12/2003",
+      "Chloe, why can't they all be like you?\nOn 6/04/2003",
+      "Hey, Quentin! You finally picked a name for the band, eh? When's the first show?\nOn 5/30/2003",
+      "Hey, Milka? We are totally cool. Elton is all yours babe. \nOn 6/14/2003",
+      "Hey, Crystal. I just wanted you to know that if you need anything, like to talk to anyone, just let me know.\nOn 5/29/2003",
+      "Kitty is cool, and she-- oh man, Kitty. Do I really have to do this? It's so dumb. Can I cancel it now? If I just don't sign on for a while will it go away?\nOn 5/24/2003",
+      "When Chops plays the guitar, I almost, ALMOST like people.\nOn 5/27/2003"
+    ];
+    var liliSelect = liliArray[Math.floor(Math.random()*liliArray.length)];
+    message.channel.sendMessage('Lili Zanotto said:');
+    message.channel.sendMessage(liliSelect);
+  }
 
   //messages asking for clem's campster lines
   if (message.content.startsWith(chat + 'clem')) {
