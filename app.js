@@ -178,16 +178,6 @@ client.on('message', message => {
     message.channel.sendMessage(bobbySelect);
   }
 
-  if (message.content.startsWith(chat + 'bobby')) {
-    var bobbyArray = [
-      "Who cares about shooting? Let's see how good you are with your fists Hoofburger.\nOn 6/15/2003",
-      "Benny, dude, I thought I told you, not every time, alright? Wait for the signal.\nOn 6/15/2003"
-    ];
-    var bobbySelect = bobbyArray[Math.floor(Math.random()*bobbyArray.length)];
-    message.channel.sendMessage('Bobby Zilch said:');
-    message.channel.sendMessage(bobbySelect);
-  }
-
   if (message.content.startsWith(prefix + 'foo')) {
     message.channel.sendMessage('bar');
   }
