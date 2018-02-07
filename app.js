@@ -243,7 +243,8 @@ client.on('message', message => {
       "OMG we have so much fun at camp! This is the best year ever! I could die now and be totally happy! I'm just saying it wouldn't be a complete tragedy if we died this year, because then we would have ended on a high note!\nOn 6/19/2003",
       "Yeah, Kitty's just more unique on the outside, where we can see it. Some of us are more unique on the inside. In our hearts!\nSome of our hearts are big, and some are small, and some of them are dark, and still, and stopped beating long ago, and yet somehow we manage to slog through this shadow puppet theater day in and day out, waiting for the merciful velvet curtain of death.\nOn 6/11/2003",
       "Three cheers for Maloof.\nHip hip hurray!\nHip hip hurray!\nHip hip-- oh forget it. He is kind of a baby.\nOn 5/23/2003",
-      "Where was I? Oh yeah...\nHip hip, hurray!\nOn 6/20/2003"
+      "Where was I? Oh yeah...\nHip hip, hurray!\nOn 6/20/2003",
+      
     ];
     var clemSelect = clemArray[Math.floor(Math.random()*clemArray.length)];
     message.channel.sendMessage('Clem Foote said:');
