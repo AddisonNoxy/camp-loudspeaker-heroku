@@ -15,6 +15,35 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + 'ping')) {
     message.channel.sendMessage('pong');
   } else
+    
+    //messages asking for j.t.'s campster lines
+  if (message.content.startsWith(chat + 'jt')) {
+    var jtArray = [
+      "Are you guys forgetting the psychic rodeo? That's a sport!\nOn 5/13/2003",
+      "Lili is a straight-shooter, and I'd trust her with my horse..\nOn 5/24/2003",
+      "Well, gosh, Elka. Phoebe here is usually pretty smart about these things. Are you sure you don't need more time? I certainly like spending time with y'all, but I'd understand if you needed some time alone in the saddle.\nOn 6/5/2003",
+      "Clem's a can-do fella. I like that. Just not so much around me, but from a distance.\nOn 6/2/2003",
+      "I reckon Elton here's been lassoed by a certain pair of black pigtails, and hog-tied by that ol' varmint the French call L'Amour (and I'm not talking Louis L'Amour neither!).\nOn 5/26/2003",
+      "Giddyup, li'l doggie! Yeeeeeee haw!!!\nOn 5/28/2003",
+      "Hey, um... bobby? I'm just here because Elka, well I reckon she's my girlfriend now. And anyway she had a message for you. She's none too happy that you stole her 'About Me' section and she'd love if you'd just go ahead and take that right down. Thanks for lettin' me bend your ear, there, pardner.\nOn 6/10/2003",
+      "Tarnation. And I thought my hat was important. All it protects me from is sunburn!\nOn 6/20/2003",
+      "Sometimes, when I'm out on the prairie at night, and it's just me an my li'l doggy lopin' along, looking at the stars, I think of Chloe, and I says to myself, I wonder if she's up there right now? I wonder if she's made it yet? And I think if not, then maybe next year, cuz that li'l gal's got plenty of gumption. I recon she'll be up in the cool, cool yonder soon enough, why shucks.\nOn 6/14/2003",
+      "Scuze me, buckkaroo, but I thought I was that there 'front person.'\nOn 6/10/2003",
+      "Awful sorry about missing that there practice, Quentin. Won't happen again, you got my word.\nOn 6/23/2003",
+      "That tears it. I'm out.\nOn 6/28/2003",
+      "Shhhhhh! Miss Phoebe, I beg you to keep your mouth shut, if'n you don't mind.\nOn 6/20/2003",
+      "You know, I couldn't hope for a better sweetheart' for my pardner Elton than this ol' gal here. She's quiet as the plains, pretty as a new saddle, and sharp as a prairie porcupine! Ain't that the plain truth? Shucks, now.\nOn 5/30/2003",
+      "Howdy there li'l missy! Just thought I'd check in, see if you're riding high in the saddle again.\nOn 6/06/2003",
+      "If this little one don't keep up with the herd, I'm afraid the buzzards gonna get 'im.\nOn 5/23/2003",
+      "Hey, sure thing pardner!\nOn 5/29/2003",
+      "Me and ol' Chops here? Shoot. We go way back. Ever since we were just knee high to a couple of tumbleweeds, he's been the Butch Cassidy to my Sundance, or vice-a-versa. We've been riding together so long, it's like we was brothers, even despite our differences. For instance, Chops is Canadian and I am not. Also, he plays the guitar while I prefer the harmonica. And still, there ain't nobody I'd rather ride shotgun for than this here cowboy. I tip my 10 gallon to you, sir.\nOn 5/23/2003",
+      "Well, traditionally the one playing the harmonica is the leader of the band, so how about J.T. Hoofburger's Wild West posse?\nOn 6/20/2003",
+      "I don't know what this talk is all about chops. Elka here is a nice girl, but she's duller than ditchwater and I'm getting a little tired of her takin' up all my time. The posse is still just you and me. Always has been, always will be, and no fast-talkin' filly is gonna change that.\nOn 6/20/2003"
+    ];
+    var jtSelect = jtArray[Math.floor(Math.random()*jtArray.length)];
+    message.channel.sendMessage('James Theodore Hoofburger said:');
+    message.channel.sendMessage(jtSelect);
+  }
 
   //messages asking for clem's campster lines
   if (message.content.startsWith(chat + 'clem')) {
