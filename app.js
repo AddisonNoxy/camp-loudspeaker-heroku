@@ -157,6 +157,16 @@ client.on('message', message => {
     message.channel.sendMessage(mikhailSelect);
   }
   
+    //messages asking for elka's friendster lines
+  if (message.content.startsWith(chat + 'elka')) {
+    var elkaArray = [
+      "James here is the best boyfriend a girl could have. He's sensitive, strong, handsome, and polite. Not like some people I could name. Definitely an upgrade over my old boyfriend.\nI see a great future for us together, Nils!\nOn 5/29/2003"
+    ];
+    var elkaSelect = elkaArray[Math.floor(Math.random()*elkaArray.length)];
+    message.channel.sendMessage('Elka Doom said:');
+    message.channel.sendMessage(elkaSelect);
+  }
+  
    //messages asking for clem's campster lines
   if (message.content.startsWith(chat + 'clem')) {
     var clemArray = [
