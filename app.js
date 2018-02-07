@@ -157,6 +157,41 @@ client.on('message', message => {
     message.channel.sendMessage(mikhailSelect);
   }
   
+    //messages asking for elka's friendster lines
+  if (message.content.startsWith(chat + 'elka')) {
+    var elkaArray = [
+      "James here is the best boyfriend a girl could have. He's sensitive, strong, handsome, and polite. Not like some people I could name. Definitely an upgrade over my old boyfriend.\nI see a great future for us together, Nils!\nOn 5/29/2003",
+      "I meant JAMES! Not Nils! Definitely not Nils! I certainly did NOT mean to... it was the spell checker, I swear!\nOn 5/29/2003",
+      "Shut up, Nils. No one's talking to you.\nHey, James, I noticed you didn't have any pictures of me in your photos page. Here, I'll mail you some, JAMES.\nOn 5/29/2003",
+      "Oh, you're in trouble now, Benjamin. My boyfriend James is NOT going to put up with that kind of insult. Right James?\nOn 6/02/2003",
+      "Hey boyfriend, those pictures aren't up yet. What's the matter? Having a problem picking just three? You can put them all up if you want! ;) I won't mind!\nOn 6/13/2003",
+      "J.T. knows that a man's first priority is his girlfriend, Chops. He doesn't always have time for childish pursuits like \"chilling\" and \"bro-ing out\" anymore.\nOn 6/21/2003",
+      "I see bad things in the future for you, Mr. Sweetwind, if you don't mind your manners. ;)\nOn 6/22/2003",
+      "I went out with you. I... Elka Doom... went out with you... Nils the Pig. How did that happen?\nOn 6/02/2003",
+      "Okay NEWS FLASH everybody. I'm know that Nils and I were THE hot and heavy couple last year. But we are OFFICIALLY and PERMANANTLY\n\nB R O K E N   the F.  U P ! ! !\n\nYes, I know we seemed perfect for each other. I know you probably thought, \"Boy, they're going to be together forever because I'm sure Nils would do anything to keep that girl happy--he's so lucky to have her.\" But you'd be wrong! Suprise!\nWell that's the bad news. The good news is I'm OVER IT. And I'm happy to be single and looking forward to spending a long time by myself, learning who I am again, and just being okay with myself.\nP.S. Private message to Nils: \"Your loss!\"\nOn 6/03/2003",
+      "Who'd have thought lightning would strike the same girl twice? Well it has. I have found something even more special than what I had with this loser.\nMy NEW boyfriend is none other than James Theodore Hoofburger. Now HE is a real man, and he knows how to treat a lady.\nSorry Charlie, I mean, Nils!\nOn 6/04/2003",
+      "Just popping in to say how great everything is with James.\nIt's great!\nOn 6/05/2003",
+      "Oh, Nils. What happened between us? I don't understand. I saw the future and we were together. My predictions are never wrong! For a hundred years, my family has seen the future without fail! And yet, somehow it didn't work between us. Why?\nOn 6/06/2003",
+      "Okay, forget that last testimonial. I was being weak. Totally weak! I don't need Nils! The future is mine to create, and I'm to busy creating one with James to even think about Nils.\nOn 6/07/2003",
+      "Oh, I just thought of something. James can ride a horse. Isn't that great? I love horses.\nOn 6/08/2003",
+      "Oh, Nils. I miss you so much. Can't we just give it another chance? Please. I'll do anything. I'll change. I can change. Anything you want.\nOn 6/09/2003",
+      "Ha! What a difference a day makes! I hope you didn't take that last testimonial too seriously, because I was obviously just hallucinating. Or my heart was misdirecting my feelings for James into some screwed up internal mirage of you, or something like that. Well, never you mind about it. That phase has gone, like a 24 flu.\nOn 6/10/2003",
+      "Okay, I just have one question. Did I get too close? Was that it? Nils, did I pressure you in some way? Not that I care, but I'd just like to know.\nOn 6/11/2003",
+      "Nils, I had a long talk just now with my mother about this and she had this whole theory about why we both push each other away. I'd love to tell you about it. It's pretty interesting.\nOn 6/12/2003",
+      "You know, what you said to me today was so rude, I just want to say thank you. Thank you for reminding me why we broke up: because you're a pig.\nOn 6/13/2003",
+      "Oh, Nils. I AM happy with James, but I'm just so worried about you. Are you ever going to find someone? Are you going to end up lonely? Who's going to take care of you?\nOn 6/14/2003",
+      "Nils, last time I talked to your mom she asked me about that coffee cake I made for that one time, so I wrote out the recipe and put it under your pillow.\nWhile I was there, I couldn't help but notice that it smells like you changed shampoo. I don't know what you're using now, but are you sure it has enough dandruff protection for you?\nOn 6/15/2003",
+      "Talking to Crystal about you and me, I had a revelation about us and our relationship. Can't wait to tell you about it.\nOn 6/16/2003",
+      "Okay, Nils. You said that even though we've broken up you wanted to stay friends. Well friendships take work, and I feel like as far as this one goes, I'm the only one putting any work into it. My therapist says I'm a "pleaser" so it's in my nature, but I honestly don't know how much I can take. If you don't start putting more into this thing, then it's just not going to work. And I'd be extremely sad if we weren't able to salvage at least a friendship out of this.\nOn 6/17/2003",
+      "Okay seriously, I'm about to stop if you don't respond.\nOn 6/18/2003",
+      "I'm so mad at you right now. I'm so glad we broke up. I've written your mother another long letter about it and put it under your pillow. Please make sure she gets it.\nOn 6/19/2003",
+      "Oh... Nils. Nils...\nOn 6/20/2003",
+    ];
+    var elkaSelect = elkaArray[Math.floor(Math.random()*elkaArray.length)];
+    message.channel.sendMessage('Elka Doom said:');
+    message.channel.sendMessage(elkaSelect);
+  }
+  
   //messages asking for clem's campster lines
   if (message.content.startsWith(chat + 'clem')) {
     var clemArray = [
@@ -221,32 +256,6 @@ client.on('message', message => {
     var dogenSelect = dogenArray[Math.floor(Math.random()*dogenArray.length)];
     message.channel.sendMessage('Dogen Boole said:');
     message.channel.sendMessage(dogenSelect);
-  }
-  
-    //messages asking for mikhail's friendster lines
-  if (message.content.startsWith(chat + 'mikhailtest') || message.content.startsWith(chat + 'mishatest')) {
-    var mikhailtestArray = [
-      "Hoofburger, I would not wrestle if he were allowed to use psychic blasting. Not fair, and not good for wrestling. Without psychic blasting I think no problem. I take him out like that. Then again, as he is crowd favorite, maybe I pretend to hurt my ankle and throw match so as not to damage long range career goals.\nOn 5/30/2003",
-      "Athens woman looks easy to beat. But maybe... too easy. Must be a trick. Something hidden in that hair? Could be. Animal instincts tell me she has some secret. Maybe I watch her fight someone else before I form strategy.\nOn 6/07/2003",
-      "Lili has a strong mind. I like her, but I could probably take her in a fight. But most likely she would forfeit by not showing, from what I hear.\nOn 6/16/2003",
-      "Doom is perfect wrestling name. But she would not be hard to beat. True, she can see the future, so she will know where every blow coming from. She could block everything. But thing is, what can she do about it? Look at those little arms! Block all she wants, Mikhail coming through! Ka-boom!\nOn 6/09/2003",
-      "Another tall one. Hmmm. I'd go for the toes, hit him low, possibly use the ropes to get him airborne, and then unleash the telekeliminator. Anything to shut him up. As long as he doesn't tap in his girlfriend it should go okay.\nOn 5/29/2003",
-      "Elton is smallish to medium small. Looks easy to beat. But crazy look in his eye-- may be trouble. I would try to use the element of surprise, maybe TK his hat over his eyes and then roundhouse kick to the shins.\nOn 6/16/2003",
-      "This one is tall, so looks threatening. But really, he is mostly hair. So not so bad. Then again, he looks like a biter. I would try and get him from a distance, maybe burning, to take down hair first. I would need some goggle, in case he spits. Tricky one. Good match. Looking forward to it!.\nOn 6/07/2003",
-      "With Boole... I forfeit. Hat could come off too easily. Uncomfortable with risk level, and head explosion concept.\nOn 6/15/2003",
-      "The helmet prevents effective blows to the head, but I've never relied on those so that shouldn't be a problem. I would normally focus on the legs, because they look so puny and weak, but they are also short--strike zone very small because of this. So I think best thing to do just pick her up, throw out of ring.\nOn 6/18/2003",
-      "If I wanted to win match with Benny... many options. Most fun would be to tie ears in front of face.\nOn 5/28/2003",
-      "Firestarters are always so difficult. Hard to hold them down for three seconds before you are badly burned. But up against telekinesis, no match. I pick her up, dip her in a bucket of water--Phoebe now tough as wet kitten.\nOn 6/20/2003",
-      "Here is Hedgemouse's fatal mistake: the scarf. It will be his undoing just like famous ballerina Isadora Duncan. So many things I could do with it. A wrestler's mind reels. I think maybe wrap it around him enough times so I could do yo-yo tricks with him. That would drive the crowd crazy. Ya, that's the ticket.\nOn 6/21/2003",
-      "Milka? Tricky, as an opponent.\nSmall and weak-looking. But slippery. Disappearing and then reappearing behind. Can be annoying. My plan-- carry chalk dust into ring, throw around until I see invisible girl, then I can get my mental claw on her, and the match is mine. Saw in Chevy Chase movie.\nOn 6/19/2003",
-      "This Snagrash is a sweet girl. A sad girl. In a match I would grab her by her pony tail and swing her around over head, then launch her into the crowd. Then beat my chest and growl. Doesn't work for every opponent, but girl seems small.\nOn 6/15/2003",
-      "Bubai thinks I won't hit a girl. She is right, but that is only because I'm a wrestler, and we do not hit. What she needs is a big hug. Like a big bear hug, then a few spins over the head, and then a nice piledriver, and then three seconds and its over, with no hitting.\nOn 5/29/2003",
-      "Silence. Nobody picks on Maloof. Everyone is done with that, and there will be no more.\nOn 5/28/2003",
-      "Okay, now this should be fun. He looks small, but he has the psychic fists. Not good at picking things up like mine, but good for the punching and the hitting. Like big bear claws. He's like a little cub with the paws of a grizzly. Probably best to pull chair from audience, and hit him on back of head while he's turned away to wave at crowd.\nOn 6/18/2003"
-    ];
-    var mikhailtestSelect = mikhailtestArray[Math.floor(Math.random()*mikhailtestArray.length)];
-    message.channel.sendMessage('Mikhail Bulgakov tested:');
-    message.channel.sendMessage(mikhailtestSelect);
   }
 
   if (message.content.startsWith(prefix + 'foo')) {
