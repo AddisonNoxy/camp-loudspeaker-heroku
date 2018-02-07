@@ -15,6 +15,70 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + 'ping')) {
     message.channel.sendMessage('pong');
   } else
+  
+    //messages asking for j.t.'s campster lines
+  if (message.content.startsWith(chat + 'jt')) {
+    var jtArray = [
+      "Are you guys forgetting the psychic rodeo? That's a sport!\nOn 5/13/2003",
+      "Lili is a straight-shooter, and I'd trust her with my horse..\nOn 5/24/2003",
+      "Well, gosh, Elka. Phoebe here is usually pretty smart about these things. Are you sure you don't need more time? I certainly like spending time with y'all, but I'd understand if you needed some time alone in the saddle.\nOn 6/5/2003",
+      "Clem's a can-do fella. I like that. Just not so much around me, but from a distance.\nOn 6/2/2003",
+      "I reckon Elton here's been lassoed by a certain pair of black pigtails, and hog-tied by that ol' varmint the French call L'Amour (and I'm not talking Louis L'Amour neither!).\nOn 5/26/2003",
+      "Giddyup, li'l doggie! Yeeeeeee haw!!!\nOn 5/28/2003",
+      "Hey, um... bobby? I'm just here because Elka, well I reckon she's my girlfriend now. And anyway she had a message for you. She's none too happy that you stole her 'About Me' section and she'd love if you'd just go ahead and take that right down. Thanks for lettin' me bend your ear, there, pardner.\nOn 6/10/2003",
+      "Tarnation. And I thought my hat was important. All it protects me from is sunburn!\nOn 6/20/2003",
+      "Sometimes, when I'm out on the prairie at night, and it's just me an my li'l doggy lopin' along, looking at the stars, I think of Chloe, and I says to myself, I wonder if she's up there right now? I wonder if she's made it yet? And I think if not, then maybe next year, cuz that li'l gal's got plenty of gumption. I recon she'll be up in the cool, cool yonder soon enough, why shucks.\nOn 6/14/2003",
+      "Scuze me, buckkaroo, but I thought I was that there 'front person.'\nOn 6/10/2003",
+      "Awful sorry about missing that there practice, Quentin. Won't happen again, you got my word.\nOn 6/23/2003",
+      "That tears it. I'm out.\nOn 6/28/2003",
+      "Shhhhhh! Miss Phoebe, I beg you to keep your mouth shut, if'n you don't mind.\nOn 6/20/2003",
+      "You know, I couldn't hope for a better sweetheart' for my pardner Elton than this ol' gal here. She's quiet as the plains, pretty as a new saddle, and sharp as a prairie porcupine! Ain't that the plain truth? Shucks, now.\nOn 5/30/2003",
+      "Howdy there li'l missy! Just thought I'd check in, see if you're riding high in the saddle again.\nOn 6/06/2003",
+      "If this little one don't keep up with the herd, I'm afraid the buzzards gonna get 'im.\nOn 5/23/2003",
+      "Hey, sure thing pardner!\nOn 5/29/2003",
+      "Me and ol' Chops here? Shoot. We go way back. Ever since we were just knee high to a couple of tumbleweeds, he's been the Butch Cassidy to my Sundance, or vice-a-versa. We've been riding together so long, it's like we was brothers, even despite our differences. For instance, Chops is Canadian and I am not. Also, he plays the guitar while I prefer the harmonica. And still, there ain't nobody I'd rather ride shotgun for than this here cowboy. I tip my 10 gallon to you, sir.\nOn 5/23/2003",
+      "Well, traditionally the one playing the harmonica is the leader of the band, so how about J.T. Hoofburger's Wild West posse?\nOn 6/20/2003",
+      "I don't know what this talk is all about chops. Elka here is a nice girl, but she's duller than ditchwater and I'm getting a little tired of her takin' up all my time. The posse is still just you and me. Always has been, always will be, and no fast-talkin' filly is gonna change that.\nOn 6/20/2003"
+    ];
+    var jtSelect = jtArray[Math.floor(Math.random()*jtArray.length)];
+    message.channel.sendMessage('James Theodore Hoofburger said:');
+    message.channel.sendMessage(jtSelect);
+  }
+
+  //messages asking for franke's friendster lines
+  if (message.content.startsWith(chat + 'franke')) {
+    var frankeArray = [
+      "Hey, cowboy! I love your hat. What do I have to do to wear it for a day, eh pardner?\nOn 6/11/2003",
+      ">:O!\nOn 6/11/2003",
+      "Hey, those shoes were a PRESCRIPTION from a DOCTOR, jerk!\nOn 6/13/2003",
+      "Dood, give it up, bro. She doesn't even know you're alive. You do NOT make her go, \"Huh!\" If anything, you make her go, \"ZZZzzz.\" You have got to move on. Somewhere out there is a really strange girl who is perfect for you and your freakiness. But seriously, you're embarrassing yourself here. It's sad. It's hard to watch.\nOn 5/26/2003",
+      "Oh, it's private, but it's between you and yourself, not you and \"Ms. Zanotto.\" (hee hee). But hey, whateva. I was just trying to save you some time Romeo. Keep typing. The whole girls' cabin is having a blast reading this!\nOn 5/26/2003",
+      "Ah ha ha ha! Oh, man. I want to stop watching, but I can't!\nOn 5/27/2003",
+      "Beyyotch, that's my boyfriend your talking about. ;)\nOn 5/17/2003",
+      "Uh, hang on there, Vern. I uh.. i meant \"future boyfriend\" like when we're older? And I'm a woman, and can give myself to you fully?  Like maybe... after you finish doing my boathouse cleaning chores for me?\nOn 5/17/2003",
+      "Oh, Vernon knows I'm not fast. Right Vernon? He doesn't want that kind of girl, does he?\nOn 5/30/2003",
+      "Man, why don't you just get married and get a barbie doll dream house together already?\nOn 6/14/2003",
+      "Yo Swamp Monster. My homework done yet?\nOn 6/17/2003",
+      "No, I'm seeing it too. He's got a hot little nose..\nOn 6/05/2003",
+      "Dude, that was-- oh never mind.\nOn 6/07/2003",
+      "Rrrrrrallllr!  (How do you spell that thing where you pretend to be a growling panther but all sexy style?) Rrrroowl?\n\nrrrRRrrrRRRRrrrow?\nOn 6/12/2003",
+      "Elton, baby. He's got nothing on you. You're special. Do you see me asking Quentin to do my homework? No. Only you. :)\n\nP.S. Hey, where the hell IS my homework?\nOn 6/10/2003",
+      "Yeah, I heard that they found you in the woods living in a tree, eating bugs, and when they brought you here you were speaking all in crazy Nell talk.\nOn 5/18/2003",
+      "Were you saying, \"Hey, where are my delicious bugs?\" AHAHAHAHA.\nOn 5/18/2003",
+      "Hey, Kitty. I think we should get the girls together for a little midnight skinny dip to cheer up Crystal! What do you say?\nOn 6/09/2003",
+      "This girl is the foxiest psychic I know. And the coolest dresser, and she knows everything there is to know about makeup. Girlfriend, you are the Queen of Camp Whispering Rock!!\nOn 5/22/2003",
+      "Just checking in with you, Baby Bubai! Stay gorgeous! <3<3!\nOn 5/27/2003",
+      "Uh maybe he just likes her for the same reason we all like Kitty? Because she's rad? And you're jealous?\nOn 6/07/2003",
+      "Hm, no people who can roll their tongue into a tube are definitely better.\nOn 6/14/2003",
+      "In summary, Kitty's the best. Agreed?\nOn 6/19/2003",
+      "Heh heh. Yeah, come on. You know you like it.\nOn 5/15/2003",
+      "Hey, Maloof you'll still come over right? Except I don't think we have a dress big enough for your friend. He'll have to wear a mu mu.\nOn 6/14/2003",
+      "Yeah! I've been practicing my Girl From Ipanema thing....\nOn 6/03/2003"
+    ];
+    var frankeSelect = frankeArray[Math.floor(Math.random()*frankeArray.length)];
+    message.channel.sendMessage('Franke Athens said:');
+    message.channel.sendMessage(frankeSelect);
+  }
     
   
     //messages asking for nils's friendster lines
@@ -134,48 +198,6 @@ client.on('message', message => {
     var clemSelect = clemArray[Math.floor(Math.random()*clemArray.length)];
     message.channel.sendMessage('Clem Foote said:');
     message.channel.sendMessage(clemSelect);
-  }
-  
-  //messages asking for bobby's friendster lines
-  if (message.content.startsWith(chat + 'bobby')) {
-    var bobbyArray = [
-      "Who cares about shooting? Let's see how good you are with your fists Hoofburger.\nOn 6/15/2003",
-      "Benny, dude, I thought I told you, not every time, alright? Wait for the signal.\nOn 6/15/2003"
-      "Ouch. Kicked when she's down. Ruthless... I'm proud of you my young Paduan learner.\nOn 6/07/2003",
-      "Hey, dude. Much like Dr. Love here, I too, am concerned with your unfocused rage and violent energies. You need to channel that force into something more positive. Like say, being in my gang. Benny is efficient for hurting people's feelings and being annoying, but I really need in my corner is pure, dumb muscle.\nOn 5/21/2003",
-      "And look at Benny here. He's small and some day one of these kids is going to TK his head off and there I'll there I'll be without an flunkie! So what do you say? Pay is 3% of all lunch money received, and all the smackdown you want to dish out.\nOn 6/22/2003",
-      "I pay by the pound. And speaking of pounds, maybe you better shut up unless you want some right now.\nOn 6/22/2003",
-      "Oh, I'll route something through you--my fist! hahaha!\nOn 6/22/2003",
-      "Shut up, Benny.\nOn 6/22/2003",
-      "Oh, good, because there's one in your foot locker right now, Boole. Ha ha ha! And I'm not going to tell you what it is!\nOn 6/11/2003",
-      "No, you stupid idiot. It's a surprise.\nOn 6/13/2003",
-      "Benny, seriously. You just earned yourself a four-limb indian burn.\nOn 6/15/2003",
-      "What a chicken. I could take that kid easy. First step is staple that damn hat directly onto his skull. Second step--ass whooping. Third step, chicks.\nOn 6/15/2003",
-      "New rule Bulgakov. Anybody so much as LOOKS at Chloe, they're psychic road kill. Got it?\nOn 6/19/2003",
-      "Sorry. I've been asked to rephrase that. Let's all remember to show each other respect and not say mean things to each other.\nOn 6/20/2003",
-      "Everybody should have a Benny. He takes his beatings like a man, and if you drop your change down the outhouse, he'll run down in there to get it for you, without too much resistance.\nOn 5/30/2003",
-      "Oh, hey guys. Bobby Zilch here. Sorry about that friends' list thing. You know, I keep trying to add you guys, but my computer keeps saying, \"REJECTED: These jocks are lame and they suck. Cannot accept. Beep, beep beep!\" I don't know what it is. It must be some sort of computer error.\nOn 6/19/2003",
-      "HA HA HA HA! Gottcha, Snagrash!\nOn 6/19/2003",
-      "Benny, what's this I hear about you playing a dirty trick on Chloe? I told you, everybody's fair game but her. So lay off. Don't ask why unless you want me to give you the five good reasons I have on my right hand, which I will curl up into a fist with which to hit upon your ass. Understand rubber band? I'm the boss, applesauce.\nOn 6/19/2003",
-      "Okay, I don't know what all those PBS words mean, but I'm going to assume you got my point, RE: my bossness. We clear, mr. Brains-a-Lot?\nOn 6/22/2003",
-      "That is the circle of life, Simba.\nOn 6/14/2003",
-      "So girls like him. Big deal. I got plenty of girls after me, and I don't have to pretend to like them to get 'em either.\nOn 6/17/2003",
-      "God I hate you two so much, I can feel it in my liver. Seriously, it's producing extra bile every time I hear your voice. You're killing me.\nOn 6/19/2003",
-      "P.S. That reminds me--Hedgemouth: Bobby and I want to be in the band.\nOn 6/25/2003",
-      "I'm going to be taps, at your funeral, if you don't let us in your band. heh.\nOn 6/27/2003",
-      "Or even better: team Take-a-Poo-on-You!\nOn 5/29/2003",
-      "Give it up, lame-os. I'm not putting you on my friends list. You suck.\nOn 5/29/2003",
-      "Tough titty said the kitty when the milk went dry.\nOn 5/29/2003",
-      "Hey new kid. Welcome to camp. You're dead meat.\nOn 5/09/2003",
-      "Nah. I'm outta here. Benny, he's all yours.\nOn 6/10/2003",
-      "Heh heh heh.\nSweetwind.\nHeh heh.\nOn 6/01/2003",
-      "Excellent. Now say something about their talent, quick, while that one is still stinging.\nOn 6/13/2003",
-      "Not bad, not bad. Now wrap up with a cheap shot about about their appearance.\nOn 6/15/2003",
-      "hm... solid. Weak ending, but all in all, a good effort.\nOn 6/16/2003"
-    ];
-    var bobbySelect = bobbyArray[Math.floor(Math.random()*bobbyArray.length)];
-    message.channel.sendMessage('Bobby Zilch said:');
-    message.channel.sendMessage(bobbySelect);
   }
 
   if (message.content.startsWith(prefix + 'foo')) {
