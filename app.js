@@ -252,50 +252,46 @@ client.on('message', message => {
     message.channel.sendMessage(clemSelect);
   }
   
-    //messages asking for elton's friendster lines
-  if (message.content.startsWith(chat + 'elton')) {
-    var eltonArray = [
-      "J.T. is the king of the psychic target range. I'm not really that good at it, but for J.T. it's like shooting fish in a barrel. (Which I would never do either because I could hear them scream.)\nOn 6/01/2003",
-      "What about canoeing?\nOn 6/10/2003".
-      "Yeah, but what about canoeing?\nOn 6/12/2003",
-      "Doesn't anyone care about canoeing?\nOn 6/14/2003",
-      "You know it's really hard, canoeing... and there's a kind of stick...\nOn 6/16/2003",
-      "But canoeing is the only thing I'm really good at.\nOn 6/19/2003",
-      "Hi, Lili. Just wanted to pop in and say I liked your profile. Ha, yeah. People are so dumb.\nOn 5/9/2003",
-      "Hey, Lili. I noticed your profile doesn't have a picture. Here's one I took on accident. My camera must have gone of when I wasn't looking. Or something. Sorry you're head's cut off. Anyway maybe I could take a better one later? :)?\nOn 5/11/2003",
-      "Hi Lili. I saw that you're picture's not up yet. You know, I could put that picture up for you, if you wanted me to. It's no problem. If you gave me the password to your account... or maybe I could guess it. Let's see, your dog back home is named Mephisto... could that be it? :) Or maybe its Martindale, your mom's maiden name?\nOn 5/13/2003",
-      "Hey, you put the picture up! Great. Looks good!\nOn 5/19/2003",
-      "Hey, Lili. Just wondering if you were going to the campfire tonight? It's probably going to be stupid. Coach Oleander is so ra-ra. But I heard you have to pick partners for the scavenger hunt and, so... well let me know.\nOn 5/20/2003",
-      "Hey, Lili. Did you get my message about the campfire?\nOn 5/20/2003",
-      "Hey, Lili. I know you like plants, and and I saw the other day that there was a whole site about psychic plants so I thought you might want to check it out:\n\nhttp://www.psychic-plants-network.com\nOn 5/22/2003",
-      "Oh god, I should have read that article before I sent it to you. I didn't know it was all about sex stuff like that. GOD I'm so embarrassed. Please... uh... just... sorry.\nOn 5/22/2003",
-      "Hey, are you mad? About the whole sexy plants thing? Really, I'm not a plant perv! I haven't heard back from you so I just thought I'd check. The campfire was pretty stupid, you're lucky you didn't go.\nOn 5/22/2003",
-      "Hey, I just thought of something. This is pretty weird, because, like you are really into plans right? And your name IS a plant. \"Lili\" is a plant. Did you know that? Isn't that weird?!?\nOn 5/22/2003",
-      "Hi Lili. Agent Nein missed you in class today. He called your name and when you didn't answer, I made up a story about how you had diarrhea and couldn't come to class, but then everybody started laughing and god, kids can be so immature, don't you think? Ahhhhh! >:| !!!\nAnyway, I got your homework for you. I could drop it by your cabin later, or I could just do it for you. Why don't I just do it for you, and then you can come pick it up? Let me know. I'll stay in all night, just in case you come by.\nOn 5/23/2003",
-      "Well, I didn't see you last night, so I just dropped the homework off for you. Don't worry, it's not a problem.\nOn 5/24/2003",
-      "Hey, I came by the girl's cabin today, and Franke wouldn't let me in because she said you were changing. And then when I came back later she said you were still changing, but it was like four hours later. So I don't know what Franke is up to but I thought you should know about it. Maybe she's trying to start rumors about you, like you're a slow dresser or something. I don't know. Want me to look into it?\nOn 5/25/2003",
-      "Hey, I just realized another weird thing. If you and I got married (not like now, but like later, and anyway I don't mean for real. This is just hypothetical) if you and I got married, your name would be Lili Fir. And BOTH of those words are plants! (Seriously! A Fir is a tree. Like a \"Douglas Fir\" for example, is a very famous and popular species of tree!)  And you like plants. Don't you think that's strange? That both our names are plants? Kinda makes you go, \"Huh!\" doesn't it?\nOn 5/26/2003",
-      "Sorry about that, Lili. I think *certain people* are misunderstanding my intentions here and maybe those *certain people* should just M.Y.O.B. and not eavesdrop on other peoples PRIVATE CONVERSATIONS. This is between myself and Ms. Zanotto.\nOn 5/26/2003",
-      "Okay, Lili. It has become obvious to me that you and I can't have a private conversation here without comments from the peanut gallery (Gee, I wonder who I'm talking about, Franke?). So I was thinking maybe you'd want to carry on with our conversation in person? Meet me by the GPC at around 8:00 okay? I have something I want to tell you and it's kind of important.\nOn 5/26/2003",
-      "Okay that must have been my fault. I'm sorry. I probably should have said, \"Meet me TONIGHT at 8:00.\" If I had been more specific maybe you would have showed up. I'm so stupid. But that's okay. I kind of felt like hanging out by myself anyway. And it was nice to sit there in the dark for a few hours, looking up at the stars. And hey, guess what? I found a constellation that looks like you! Maybe I could show it to you some other night? Anyway, sorry you couldn't make it. I know you're busy with your levitation practice.\nOn 5/27/2003",
-      "Lili, I just wanted you to know that I'm not going to be sending any more messages for a while. If you care to know why, I could tell you in person. Otherwise, I just wanted to say to you (not anyone else) that I'm okay; I'm just not posting. I didn't want you to worry. I'm sorry I have to do this, but the maturity level in this forum makes it an unfortunate necessity. I'm just sorry that a few people have to make childish comments and ruin it for everybody else. Anyway, let me know if you want to meet up soon.\nOn 5/28/2003",
-      "God, Lili. I didn't want you to find out this way. Yes... it's true. Milka and I have fallen in love. I don't know how it happened. Does anyone ever really know? The heart wants what it wants. I'm sorry if I hurt you, Lili. The time we spent together will always be precious to me.\nP.S. I have your last homework assignment if you want to meet me some time I can give it to you.\nOn 5/29/2003",
-      "I was there. It was scary. At least Lili was not hurt.\nOn 5/17/2003",
-      "Hey, Elka, I was wondering if you knew the name of the woman I'm going to marry? Does it begin with the letter L? I'm just curious.\nOn 5/27/2003",
-      "Wow. You guys are kinda high energy.\nOn 5/30/2003",
-      "Like this one, Lili? On my head? It used to be my dad's. He drowned.\nOn 6/03/2003",
-      "Hi, Chloe. Are you sure the voices aren't fishes? Sometimes that happens, and they're fishes, trying to talk to you.\On 6/05/2003",
-      "Quentin is pretty rad I guess. Girls thinks so. And girls are always right.\nOn 6/09/2003",
-      "Milka, you have shown me that you're never to old to change. You saved a wretch like me. I once was lost but now I'm found. Was blind, but now I'm kissing. You are like the siren who called this old sailor to shore. The ship of my heart is dashed upon the jagged rocks of your love, in the best way. Oh, that reminds me. I found your retainer in my neckerchief.\nOn 6/20/2003",
-      "Hey, so um. Everything okay there Crystal?\nOn 5/27/2003",
-      "Kitty, I'm sorry but I can't do you homework anymore, cuz I'm pretty busy now doing someone else's homework. Sorry.\nOn 5/28/2003",
-      "Maloof, I am so glad you are here. Now maybe I won't be the most picked on kid at camp anymore.\nOn 5/11/2003",
-      "Whoa, Maloof. Where can *I* get a big Russian dude to protect me?\nOn 6/12/2003",
-      "Hey, Lili. I'll bet you didn't know I play music too! I play the accordion. I mostly know sailor songs, but I just got the sheet music for that new one by that band \"50 Cent\" so maybe when I learn that I could come over and show you?\nOn 5/28/2003"
+  //messages asking for bobby's friendster lines
+  if (message.content.startsWith(chat + 'bobby')) {
+    var bobbyArray = [
+      "Who cares about shooting? Let's see how good you are with your fists Hoofburger.\nOn 6/15/2003",
+      "Benny, dude, I thought I told you, not every time, alright? Wait for the signal.\nOn 6/15/2003"
+      "Ouch. Kicked when she's down. Ruthless... I'm proud of you my young Paduan learner.\nOn 6/07/2003",
+      "Hey, dude. Much like Dr. Love here, I too, am concerned with your unfocused rage and violent energies. You need to channel that force into something more positive. Like say, being in my gang. Benny is efficient for hurting people's feelings and being annoying, but I really need in my corner is pure, dumb muscle.\nOn 5/21/2003",
+      "And look at Benny here. He's small and some day one of these kids is going to TK his head off and there I'll there I'll be without an flunkie! So what do you say? Pay is 3% of all lunch money received, and all the smackdown you want to dish out.\nOn 6/22/2003",
+      "I pay by the pound. And speaking of pounds, maybe you better shut up unless you want some right now.\nOn 6/22/2003",
+      "Oh, I'll route something through you--my fist! hahaha!\nOn 6/22/2003",
+      "Shut up, Benny.\nOn 6/22/2003",
+      "Oh, good, because there's one in your foot locker right now, Boole. Ha ha ha! And I'm not going to tell you what it is!\nOn 6/11/2003",
+      "No, you stupid idiot. It's a surprise.\nOn 6/13/2003",
+      "Benny, seriously. You just earned yourself a four-limb indian burn.\nOn 6/15/2003",
+      "What a chicken. I could take that kid easy. First step is staple that damn hat directly onto his skull. Second step--ass whooping. Third step, chicks.\nOn 6/15/2003",
+      "New rule Bulgakov. Anybody so much as LOOKS at Chloe, they're psychic road kill. Got it?\nOn 6/19/2003",
+      "Sorry. I've been asked to rephrase that. Let's all remember to show each other respect and not say mean things to each other.\nOn 6/20/2003",
+      "Everybody should have a Benny. He takes his beatings like a man, and if you drop your change down the outhouse, he'll run down in there to get it for you, without too much resistance.\nOn 5/30/2003",
+      "Oh, hey guys. Bobby Zilch here. Sorry about that friends' list thing. You know, I keep trying to add you guys, but my computer keeps saying, \"REJECTED: These jocks are lame and they suck. Cannot accept. Beep, beep beep!\" I don't know what it is. It must be some sort of computer error.\nOn 6/19/2003",
+      "HA HA HA HA! Gottcha, Snagrash!\nOn 6/19/2003",
+      "Benny, what's this I hear about you playing a dirty trick on Chloe? I told you, everybody's fair game but her. So lay off. Don't ask why unless you want me to give you the five good reasons I have on my right hand, which I will curl up into a fist with which to hit upon your ass. Understand rubber band? I'm the boss, applesauce.\nOn 6/19/2003",
+      "Okay, I don't know what all those PBS words mean, but I'm going to assume you got my point, RE: my bossness. We clear, mr. Brains-a-Lot?\nOn 6/22/2003",
+      "That is the circle of life, Simba.\nOn 6/14/2003",
+      "So girls like him. Big deal. I got plenty of girls after me, and I don't have to pretend to like them to get 'em either.\nOn 6/17/2003",
+      "God I hate you two so much, I can feel it in my liver. Seriously, it's producing extra bile every time I hear your voice. You're killing me.\nOn 6/19/2003",
+      "P.S. That reminds me--Hedgemouth: Bobby and I want to be in the band.\nOn 6/25/2003",
+      "I'm going to be taps, at your funeral, if you don't let us in your band. heh.\nOn 6/27/2003",
+      "Or even better: team Take-a-Poo-on-You!\nOn 5/29/2003",
+      "Give it up, lame-os. I'm not putting you on my friends list. You suck.\nOn 5/29/2003",
+      "Tough titty said the kitty when the milk went dry.\nOn 5/29/2003",
+      "Hey new kid. Welcome to camp. You're dead meat.\nOn 5/09/2003",
+      "Nah. I'm outta here. Benny, he's all yours.\nOn 6/10/2003",
+      "Heh heh heh.\nSweetwind.\nHeh heh.\nOn 6/01/2003",
+      "Excellent. Now say something about their talent, quick, while that one is still stinging.\nOn 6/13/2003",
+      "Not bad, not bad. Now wrap up with a cheap shot about about their appearance.\nOn 6/15/2003",
+      "hm... solid. Weak ending, but all in all, a good effort.\nOn 6/16/2003"
     ];
-    var eltonSelect = eltonArray[Math.floor(Math.random()*eltonArray.length)];
-    message.channel.sendMessage('Elton Fir said:');
-    message.channel.sendMessage(eltonSelect);
+    var bobbySelect = bobbyArray[Math.floor(Math.random()*bobbyArray.length)];
+    message.channel.sendMessage('Bobby Zilch said:');
+    message.channel.sendMessage(bobbySelect);
   }
   
     //messages asking for dogen's friendster lines
