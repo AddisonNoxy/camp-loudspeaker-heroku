@@ -199,6 +199,30 @@ client.on('message', message => {
     message.channel.sendMessage('Clem Foote said:');
     message.channel.sendMessage(clemSelect);
   }
+  
+    //messages asking for dogen's friendster lines
+  if (message.content.startsWith(chat + 'dogen')) {
+    var dogenArray = [
+      "J.T. promised me that the next time the squirrels stole something from me, he would shoot them out of the trees and show me how to make pie out of 'em!\nOn 6/15/2003",
+      "Xeeeeena!!! Xeeeeenaaaa!.\nOn 6/08/2003",
+      "Lili is nice and she's pretty and she smells nice. Once I got lost on the way back from the bathroom and she came out and found me and brought me back,  and didn't tell anyone. Even though her dad is like the King of the psychonauts, she doesn't act all stuck up or anything.\nOn 6/22/2003",
+      "Micky and I have a lot in common in that we hurt people sometimes and we don't know why. We try to be nice but then everybody starts crying and screaming and then they ship you off to camp. And he has a special hat just like me.\nOn 5/15/2003",
+      "Elka, just because you can see the future doesn't mean you have to ruin the ending of Milla's puppet show every time. Some of us like surprises.\nOn 6/10/2003",
+      "Clem is nice but he likes to run too much and I can't run because of my legs are really small and I lose a lot of races. But no matter what I do, Clem says I won or I'm a winner, even when I know I haven't won. So I think he might be a little... not too smart maybe.\nOn 6/19/2003",
+      "Elton wears a hat like I do. Um, hey, if you take yours off do people ever start screaming?\nOn 5/22/2003",
+      "Another excellent hat. I used to think I was the only person who had to wear a special hat, but now that I'm here I realize that a lot of people have problems with their brains being bad and hurting.\nOn 6/12/2003",
+      "Benny is always trying to take my hat off. I don't like Benny. Why am I on this list? How do I get off? Do I have to pay?\nOn 5/29/2003",
+      "Phoebe has the most fun name to say at camp.\nFeeeee-beeeeee!\nFeebee!\nOn 6/17/2003",
+      "Quentin's nice. He's a good dee jay. he helps me with the squirrels when they are mean. He does not wear a hat, but he is still special.\nOn 6/16/2003",
+      "Milka can make a Kazoo by holding a blade of grass between her thumbs. When I tried to do it I inhaled the grass on accident and they had to pull it out of my nose with a crochet hook. She cuts her hair just like Jennifer Aniston, but I think she was doing it before Jennifer Aniston. Jennifer Aniston had a baby with Ross.\nOn 6/22/2003",
+      "I like kitties because you can hold more than one at a time and it's harder for them to get away, and their noses are cold, and even though I got ringworm from one once, i still like them. Kittens.\nOn 6/08/2003",
+      "uhh.. hey. wait, what did I click on? What happened to the dancing hamster?\nOn 5/21/2003",
+      "Chops has the weirdest hat on that I've ever seen..\nOn 6/17/2003"
+    ];
+    var dogenSelect = dogenArray[Math.floor(Math.random()*dogenArray.length)];
+    message.channel.sendMessage('Dogen Boole said:');
+    message.channel.sendMessage(dogenSelect);
+  }
 
   if (message.content.startsWith(prefix + 'foo')) {
     message.channel.sendMessage('bar');
