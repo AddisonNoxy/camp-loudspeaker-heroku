@@ -363,6 +363,67 @@ client.on('message', message => {
     message.channel.sendMessage('Dogen Boole said:');
     message.channel.sendMessage(dogenSelect);
   }
+  
+    //messages asking for chloe's friendster lines
+  if (message.content.startsWith(chat + 'chloe')) {
+    var chloeArray = [
+      "J.T. I'd like you to seriously consider joining my future crew. Your marksmanship skills could come in handy, if were were to encounter any hostile life forms. How are you in zero g situations?\nOn 6/14/2003",
+      "Sounds like an abduction situation. Are you sure he didn't plan a chip in your neck when you were on board his ship?\nOn 6/04/2003",
+      "Of all the Earthlings I have met, I've wanted to dissect Lili the least. When my spaceship is complete, I would be proud to have Lili as my co-pilot.\nOn 5/25/2003",
+      "No, Bobby.\nOn 6/22/2003",
+      "Elka, you and I have one thing in common. We both know a lot about the future. One thing I'm not sure of yet, though, maybe you could fill me in: When humans eventually live in space, will we get our oxygen from air pills? Or will we grow space gills on our necks?\nOn 6/08/2003",
+      "What I like about you, Clem, is that you and Crystal seem like you're just about to blast off any moment. If I could harness your energy somehow, and turn it into solid fuel, we could really go places.\nOn 6/17/2003",
+      "Earth to Elton, Earth to Elton. There's another girl at camp besides you-know-who. Take a look around you once in a while.\nOn 5/20/2003",
+      "Bobby. Remember what we talked about.\nOn 6/22/2003",
+      "Zool!\nOn 6/12/2003",
+      "Not sure. I just wanted to-- ZOOL!!!\nOn 6/12/2003",
+      "I hate to say it, Milk, but I'm afraid he's a goner. I guess he just likes the flashy dressers. Either that or cat woman here has him in the grips of her confus-o-tron.\nOn 6/05/2003",
+      "Maloof, I love ya but I'm sorry to say you can't be on the crew. I'm afraid you just don't have the constitution for space travel, son.\nOn 5/20/2003",
+      "Hmm. Russians do make good navigators... Tell you what, Maloof. You can be on the crew if your friend comes in the package.\nOn 6/19/2003"
+    ];
+    var chloeSelect = chloeArray[Math.floor(Math.random()*chloeArray.length)];
+    message.channel.sendMessage('Chloe Barge said:');
+    message.channel.sendMessage(chloeSelect);
+  }
+
+  //messages asking for benny's friendster lines
+  if (message.content.startsWith(chat + 'benny')) {
+    var bennyArray = [
+      "Hey, J.T. Bobby just wanted you to know that you think you're so cool but you're not.\nOn 6/02/2003",
+      "Oh, and your girlfriend's ugly.\nOn 6/02/2003",
+      "Yeah! Let's see how good you are with your fists!\nOn 6/15/2003",
+      "But... I... okay.\nOn 6/15/2003",
+      "Yeah, in no time at all you'll get used to being dumped Elka. I'm sure of it.\nOn 6/06/2003",
+      "Good idea, Bobby! I do need an assistant!\nOn 5/21/2003",
+      "3%?? That's twice as much as me!\nOn 6/22/2003",
+      "Hey, back off space cadet! That was a good one.\nOn 6/22/2003",
+      "Elka, if you tell Vernon what we're going to do to him today, Bobby and I are gonna--well, you KNOW what we're going to do to ya! hahaha!\nOn 6/07/2003",
+      "OMG let me tell him!\nOn 6/12/2003",
+      "IT'S A KING SNAKE!\nOn 6/14/2003",
+      "I'm sorry. I'm so sorry boss. I'm just so excited about it! He's gonna pee his pants!\nOn 6/16/2003",
+      "Dude, get this dork some pom poms. Am I right, Bobby?\nOn 5/31/2003",
+      "Heyyyyyy Bobby! Good one today! I'll bet ol' Vernon didn't even see it coming. I guess he'll check his tapioca a little more thoroughly from now on!\nOn 6/09/2003",
+      "Hey, Bobby! You're still the man!\nOn 6/16/2003",
+      "He does! He keeps it in a jar by his bed, along with the tail of a puppy, and the nose of a little bunny! Baaaaaaaaaaaaaaaaammmmmmm!\nOn 6/18/2003",
+      "What's that all about? Remember what who talked about? Bobby? When did you talk to her? Why wasn't I there? And what did you talk about? I don't like the sound of this.\nOn 6/22/2003",
+      "Dogen  Boole:\n\nDrool.\nFool.\nTool.\n\nHeh.\nBurn.\nOn 6/12/2003",
+      "Ah ha ha ha!.\nOn 6/06/2003",
+      "What!?!?! Oh, screw this, dude. It's like I don't even know you anymore! Have fun with Major Tom here. You'll be sorry!\nOn 6/20/2003",
+      "It's good we have Phoebe at camp because she repairs the egos that Bobby and I destroy, and then sends the kid back out into the field so we can have another go at them.\nOn 6/13/2003",
+      "Face it folks, we're in the band.\nOn 6/27/2003",
+      "Yeah, and how about this for a cheer?\n_Rah-rah-rah!\nSis-boom-bah!\nHeyyyyyyyyyyy...  you suck!_\n\nHeh heh heh. Right bobby?\nOn 5/29/2003",
+      "Hey, Crystal, I just wanted you to know that if you're feeling down, it might be because you're a loser, and you suck. HAHAHAHA!\nOn 6/03/2003",
+      "Heh heh. I took his clothes while he was skinny dipping. Man I'm good.\nOn 6/17/2003",
+      "Oh, man. Let me have this one. He's little! I can do it.\nOn 5/10/2003",
+      "Shyeah, right. This guy's not so tough. Bobby's so going to kick his ass.\nOn 6/09/2003",
+      "Why don't you call it \"Telepathetic\" cuz that's what you are!\nOn 6/12/2003",
+      "Hey, Phoebe, do those headphones block out the noise? I gotta get me some of them before your next show!\nOn 6/14/2003",
+      "See you later, Barf Scarf! (that ones for Quentin.)\nOn 6/16/2003"
+    ];
+    var bennySelect = bennyArray[Math.floor(Math.random()*bennyArray.length)];
+    message.channel.sendMessage('Benny "The Nose" Fideleo said:');
+    message.channel.sendMessage(bennySelect);
+  }
 
   if (message.content.startsWith(prefix + 'foo')) {
     message.channel.sendMessage('bar');
