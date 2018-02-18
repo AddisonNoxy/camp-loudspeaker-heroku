@@ -538,13 +538,46 @@ client.on('message', message => {
       "Hey, good one Chops! The head band is super neato! That's something great about Clem I hadn't thought of yet! :D!!!!!!!!\nOn 06/11/2003",
       "Clem! OMG! You HAVE to be my partner for the scavenger hunt! HAVE to! HAVE to! HAVE to! If you don't I swear I'll throw my self into a wood chipper! Please please please!!!!!!!!\nOn 06/13/2003",
       "I would but I'm just excited about Clem! He's the greatest!!!!!!!\nOn 06/14/2003",
-      "Ha ha ha ha!!!!!!!!!!!!!\n\nGood one, Franke!!!!!!!!!!!\n\nAre you secretly a stand-up comedian? :O!\n\nJust kidding!!!! :D!\n\nWell I try not to speculate to much about the future, because no one knows what it holds (except that it's going to be GREAT!!!!!!!!) but I think Clem and I do make a great team, and maybe someday who knows?? :D!\n\nBut for now we both agree that we're too young to go steady :D and we'd rather save ourselves for later, maybe when our outrageous sprit for living has died down a little bit :/ and we slip into that phase of one's life where you start giving up on your dreams :( and all the amazing things you thought you were going to do, and you just start to panic that you're going to die alone :O and you feel like grabbing onto the first decent person you can find and tricking them into marriage so that at least you have someone to call 911 for you when your hip breaks and you can't reach the phone.",
+      "Ha ha ha ha!!!!!!!!!!!!!\n\nGood one, Franke!!!!!!!!!!!\n\nAre you secretly a stand-up comedian? :O!\n\nJust kidding!!!! :D!\n\nWell I try not to speculate to much about the future, because no one knows what it holds (except that it's going to be GREAT!!!!!!!!) but I think Clem and I do make a great team, and maybe someday who knows?? :D!\n\nBut for now we both agree that we're too young to go steady :D and we'd rather save ourselves for later, maybe when our outrageous sprit for living has died down a little bit :/ and we slip into that phase of one's life where you start giving up on your dreams :( and all the amazing things you thought you were going to do, and you just start to panic that you're going to die alone :O and you feel like grabbing onto the first decent person you can find and tricking them into marriage so that at least you have someone to call 911 for you when your hip breaks and you can't reach the phone.\n\nLong story short: Clem is a great guy!!!!! :D!!!!",
       "Clem is the best! The very, very best!\nOn 06/18/2003",
-      "Wow, Milka! You're so lucky that you can go invisible so much and snoop around into other people's business. That's so great for you!!!!!!!\nOn 06/20/2003"
+      "Wow, Milka! You're so lucky that you can go invisible so much and snoop around into other people's business. That's so great for you!!!!!!!\nOn 06/20/2003",
+      "Totally! He is totally good at canoeing!\nOn 05/24/2003",
+      "OMFG! Total master!!!!!!!11 He's like Lord God King Canoe Man! Elton rules the lake! :D :D!\nOn 05/24/2003",
+      "Omg, don't say that Clem. Who cares who's better?\nOn 05/24/2003",
+      "Oh, Clem. You're making me so sad. It's just... so... horrible. All of it. What kind of world is this if it makes a guy like you so sad? How can we go on?\nOn 05/24/2003",
+      "That's true. Let's here it for Elton, and his dominance of the telekinetic canoes!\nOn 05/24/2003",
+      "Yay Elton! :''')!\nOn 05/24/2003",
+      "You know, Dogen has special needs, like his hat. He's not as fortunate as you and I. But that's why we're so lucky to have him here OMG!\nOn 06/18/2003",
+      ":O!\nOn 06/18/2003",
+      ":D!\n\nMe too then! I wish I had a hair scrunchie that could make bad people cough out their hearts!\nOn 06/18/2003",
+      "Omg! Mine totally too! My brain hurts all the time too! So bad that sometimes I just want to die! We should form a club!!! :) :) :)!\nOn 06/13/2003",
+      "God fucking damnit!\nOn 06/13/2003",
+      "Clem, you are thee best IMHO. xoxoxo!\nOn 06/13/2003",
+      "Hey, Benny. I like your... uh...\nOn 06/19/2003",
+      "Yeah! That's it! Your shirt is THA BOMB! :D!\nOn 06/19/2003",
+      "Do you think you could talk to him? Because we really think he's cool, and we like to be friends!!\nOn 06/19/2003",
+      "Oh... uh. Okay I guess...\nOn 06/19/2003",
+      ">:|!\n\nThat's so mean! How could somebody be so mean, Clem?\n\nUnless he's right. Unless we are lame and we do suck. We only wanted to be best friends... forever.\nOn 06/19/2003",
+      "Finally! Yay! :D!\nOn 06/19/2003",
+      "Ha ha! Bobby! Of course girls like you! You and Quentin are different, but you're both great!!!\nOn 06/18/2003",
+      "OMFG! Milka Phage, I heard you and Elton Fir are dating now! That is so super great! You guys make such a great team!\nOn 05/29/2003",
+      "Yeah! Good one, Bobby!\nOn 05/29/2003",
+      "Total >:| !!!\n\nYou guys are not nice!!\nOn 05/29/2003",
+      "We're all unique deep down, Elka. You! Me! And everybody!!!! :D!!\nOn 06/10/2003",
+      "Right! And some of us can roll our tongues into a tube and some of us can't! We're all unique! But it doesn't make one of us better or worse. See?\nOn 06/12/2003",
+      "Cheer up Maloof!\nOn 05/22/2003",
+      "Clem! Come on! Every member of the team counts!\nOn 05/24/2003",
+      "Oh he's big, b-i-g!\n\nAnd he's bad, b-a-d!\n\nand he's boss, b-o-s-s, b-o-s-s, he's BOSS.\nOn 06/20/2003"
     ];
     var crystalSelect = crystalArray[Math.floor(Math.random()*crystalArray.length)];
     message.channel.sendMessage('Crystal Snagrash said:');
     message.channel.sendMessage(crystalSelect);
+  }
+  
+  //Had to be done.
+  if (message.content.startsWith(chat + 'gfd')) {
+    message.channel.sendMessage("Crystal Snagrash said:");
+    message.channel.sendMessage("God fucking damnit!\nOn 06/13/2003");
   }
 
   if (message.content.startsWith(prefix + 'foo')) {
