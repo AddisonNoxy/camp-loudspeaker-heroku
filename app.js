@@ -424,6 +424,128 @@ client.on('message', message => {
     message.channel.sendMessage('Benny "The Nose" Fideleo said:');
     message.channel.sendMessage(bennySelect);
   }
+  
+    //messages asking for phoebe's friendster lines
+  if (message.content.startsWith(chat + 'phoebe')) {
+    var phoebeArray = [
+      "J.T. it's time we got this band in gear. Come on. We got you on harmonica, Chops on guitar, me on the drums, and Quentin on turntables. But we \*\*have\*\* got to get some practicing in. Oh, and I have to get some drums. The last set I had was too flammable.\nOn 6/12/2003",
+      "With every goodbye, we learn, Elka.\nOn 6/05/2003",
+      "Mikhail, have you ever thought of finding a less violent way to express yourself? Maybe through a hobby, like mental basket weaving? Or cross stitch?\nOn 5/20/2003",
+      "I hope it's just from sugar.\nOn 6/16/2003",
+      "Hey don't forget that stuff I was telling you about the other day. I may not be a licensed psychic counselor yet, but I know of which I speak young man.\nOn 5/19/2003",
+      "Bobby, what is it about you that drives you to be such a bully? I'll bet even though you have the face of a lion, you've got the heart of a scared little kitten.\nOn 6/18/2003",
+      "Dogen is great, but this is one mind I'm not dying to get inside of. I'm not sure if you've got any secrets stored in there Dogen, but I respect you enough to let you have your privacy. And I don't want my head to explode. You see these headphones? They're hard to clean.\nOn 6/10/2003",
+      "Chloe, we all feel like aliens from time to time. It doesn't mean we should isolate ourselves in our own little galaxies, or helmets. It doesn't mean we should run away, or \"blast off\" or \"burn things.\" Even if they are just small things that nobody wants, it's important not to burn them, even if you really really want to see what happens to it when it burns. Do you see what I am getting at?\nOn 6/11/2003",
+      "Quentin is my oldest friend in the world, and a damn fine DJ to boot. Any woman would be lucky to land this man. Most would not be worthy, scarf or no scarf.\n\nP.S. The band is called the Firestarters. Might want to fix that, Q.\nOn 6/01/2003",
+      "Huh, well, Bobby. Maybe the Firestarters and I could have a meeting and discuss this. What instrument do you and Benny play?\nOn 6/26/2003",
+      "Oh, come on you guys!\nOn 6/29/2003",
+      "Waaaa? He never came to one practice!\nOn 6/20/2003",
+      "Hey, you guys. Knock it off. Milka got dropped off her by her mom, just like a lot of us. She just happened to run away, into the woods, and hide out for the first few days. Just to chill.\n\nAnd eating bugs is considered a delicacy in many underdeveloped countries, like France.\nOn 5/19/2003",
+      "Hey, Milka. Just checking to see if you're okay after what happened in the cafeteria last night. They won't tell us anything, but it looks like you were going through something pretty severe. Let me know if you need anything burned.\nOn 5/19/2003",
+      "I mean, let me know if you need anything. Period.\nOn 5/19/2003",
+      "Hey baby, how you doing? You feeling alright?.\nOn 5/28/2003",
+      "Well, if Quentin likes Kitty, she's got to be a quality person.\nRight?\nOn 6/01/2003",
+      "Maloof, it's alright to cry.\nFor a while.\nOn 5/18/2003",
+      "On second thought, you should really cry as much as you want. Let it all out.\nOn 6/07/2003",
+      "Okay, dude. Seriously. It's time for practice. This band is never going to go anywhere if we don't get together and practice! And if we don't pick a name.\nOn 6/04/2003",
+      "Sounds like inspirational Christian Rock. How about \"The Firestarters?\"\nOn 6/09/2003",
+    ];
+    var phoebeSelect = phoebeArray[Math.floor(Math.random()*phoebeArray.length)];
+    message.channel.sendMessage('Phoebe Love said:');
+    message.channel.sendMessage(phoebeSelect);
+  }
+
+  //messages asking for quentin's friendster lines
+  if (message.content.startsWith(chat + 'quentin')) {
+    var quentinArray = [
+      "heh heh. nice of you to say, milka... uh... but how about that j.t. though, eh? i heard he can hog tie a calf in 10 seconds.\nOn 5/19/2003",
+      "whoa... uh...\nOn 5/17/2003",
+      "hey hey hey! peace love rise above! let's all just chill out here. it's summer time! we're psychic and we're at this super rad camp!\nOn 5/30/2003",
+      "hey, lili. i just wanted to say thanks for chilling with me last night. i had a really good time. i didn't even know that meadow existed. it looked super beautiful in the moonlight, didn't it? well, don't worry. i won't tell anyone where it is! stay cool.\nOn 5/27/2003",
+      "hey mikhail! just poppin in to say whaddup foo? folks, this guy is tough. i wish this camp had a wrestling team, cuz with this guy on our side, we'd never loose.\nOn 5/18/2003",
+      "ayyyyy there, milka. now you know elka doesn't like answering that kind of question. she's all sensitive and stuff because of her parents and their doomed relationship or whatever so let's just say kay sarah sarah, you know? like what 's gonna be is gonna be.\n\nbut if you did want to answer that kind of question, elka, how about me and kitty, eh?  ever going to happen? cuz I just--oh you know i feel dumb now. let's just pretend i never asked. okay my friend? okay. keep on trucking.\n\nand hey i heard about you and j.t.! way to go. he is a super chill and nice guy. you two should be super psyched together. anyway, peace out.\nOn 6/03/2003",
+      "man clem has so much energy its really awesome. i totally admire that. sometimes i get tired just standing next to him, but man. i don't know where he gets it.\nOn 6/16/2003",
+      "word up my homeslice. that hat is totally ruling. you and I know what it's like to love a woman, broham. I know that if we stick it out, what was meant to be, will be. we are brothers in arms. hopefully soon we will be brothers in the arms of a couple of special ladies if you know what I mean--yeoow!\n\nright on. check your shiznit out later.\nOn 5/19/2003",
+      "slice, this is excellent. i am so stoked for you. i am totally so super inspired now. if you can move on there is hope for all of us.\noh and milka... i uh... well maybe i'll just leave you a testimonial on your own page. okay that would be better huh. okay, super dope then.\nOn 5/28/2003",
+      "yoooo, dude. Those wrist bands are the dopest.\nOn 6/17/2003",
+      "hey ultimate bro. don't let those squirrels get you down man. they only sound like they're laughing at you, I swear. that's what they sound like when they are chewing their cud, I think. wait... do squirrels eat cud? oh, whatevs. look, i'm thinking we should do that arrowhead hunt tomorrow like we talked about. i'm hoping to get a double and you're so good at finding those. let me know. peace.\nOn 6/09/2003",
+      "oh man. i am freaking out about how much i like your space helmet! if you let me borrow it sometime, i'll let you wear my scarf. it was sewn by Chilean political prisoners.\nOn 6/10/2003",
+      "This girl is HOT.\n(ha ha. she hates it when i make that joke)\n\nfor reals, this here is my oldest and best friend. wise beyond her years. we are so close, this is hard to write because it's like writing a testimonial to my left arm. that's how close we are. but I'll try.\n\nhmmm... let's see. phoebe bends in the middle and wears a watch, and has five fingers. no, wait. damn! that's my arm! i did it again! I just can't tell them apart!\n\ncheck out our band: the levitators!!!\n\nif you want.\nOn 6/06/2003",
+      "hey, no way! what an awesome idea. we totally need a front person.\nOn 6/09/2003",
+      "milka, hey. on elton's page you said i don't care, but dude, i do! i do care! seriously, that was such great times when you had a crush on me. it was totally super flattering and stuff. i'm sure you and elton are going to be seriously like the dopest couple ever. i cannot even handle how great it's going to be. at your wedding i'm going to cry and make a killer toast.\nOn 06/19/2003",
+      "hey there crystal flowers! i was just thinking i'll bet you know more cheers than anyone i know. you're like the queen of spirt. man, I wish i knew that many cheers. damn. if i knew all those cheers i'd be super psyched all the time! if you are ever not super psyched, by the way, you should definitely let me or somebody else know, k?\nOn 5/30/2003",
+      "oh man. what a super dope person. kitty is just the dopest. super rad i'm telling you. kitty got me into scarves. man... kitty... awesome!\nOn 5/25/2003",
+      "i'll say.  shoot! man. man o man! she's pretty rad. dang... I guess she's just... neat.\nOn 06/02/2003",
+      "Agreed!\nOn 06/20/2003",
+      "yo maloof, yo. hope you are not too bummed today bro.\nOn 05/17/2003",
+      "hey bros. it is so awesome that you guys are chilling together. good stuff.\nOn 6/18/2003",
+      "How about \"The Levitators.\"\nOn 06/08/2003",
+      "The Whispering Rockers!\"\nOn 06/10/2003"
+    ];
+    var quentinSelect = quentinArray[Math.floor(Math.random()*quentinArray.length)];
+    message.channel.sendMessage('Quentin Hedgemouse said:');
+    message.channel.sendMessage(quentinSelect);
+  }
+
+  //messages asking for milka's friendster lines
+  if (message.content.startsWith(chat + 'milka')) {
+    var milkaArray = [
+      "J.T. is alright. He's no Quentin, but he's alright.\nOn 5/17/2003",
+      "Sometimes I'm watching you Franke. And you don't know it.\n\nBut I know.\n\nI know everything.\nOn 05/28/2003",
+      "Not true...\n\n...TIGER!  ;)\nOn 06/20/2003",
+      "Lili, if you want your last homework assignment you can find it at the bottom of Lake Oblongata, where I put it. Which is where I'll put you, and those ho's Franke and Kitty, if you every mess with Elton again. Understood?\n\nP.S. I like your skirt.\nOn 05/30/2003",
+      "Elka, hey I was wondering if you've had any visions about me and Quentin. Like soul-kissing in a meadow or something like that. Or him giving me a present. Or something.\nOn 06/02/2003",
+      "Hey, Clem. I saw you steal a bunch of dran-o from the janitor's hut the other day. What's that all about? What you cleanin? There's no sink in the boy's cabin.\nOn 06/20/2003",
+      "Hi, Elton.\nOn 05/18/2003",
+      "Hi, Elton.\nOn 05/23/2003",
+      "Hi, Elton.\nOn 05/25/2003",
+      "Look, Elton. Here's how it is. I had a vision. Remember during dinner the other night when I had that seizure and fell onto the ground and dropped my jello and it got everywhere and I had all those spasms and the coach had to put his riding crop in my mouth so I could bite down on it, but I couldn't bite on it because I was too busy speaking Latin? That was a me having a vision. It was about you.  I realize now that you're the one I'm supposed to be with, not Crispen (like he cares). So anyway, can we talk about this? Meet me after basic braining tomorrow, behind old man Cruller's hut, okay?\nOn 05/28/2003",
+      "Elton. I'm glad we finally got a chance to talk. Are you feeling what I'm feeling? It's kind of intense. We might have to kiss soon. I mean, kiss again soon. What are you doing right now?\nOn 06/18/2003",
+      "Hi, Dogen. I like your kitty and puppy pictures. Do you have a partner for the scavenger hunt yet?\nOn 06/07/2003",
+      "Chloe is cool, and she can climb trees really well.\nOn 06/09/2003",
+      "Phoebe is cool. She thinks I have problems, but I don't. Sometimes I make them up for her because it makes her happy.\nOn 6/12/2003",
+      "Hi Quentin.\nOn 06/02/2003",
+      "Yeah, I was looking at it. It's nice. But it will die soon as all things do, including Quentin's love for you.\nOn 06/12/2003",
+      "Anyone know why Vernon is down by the lake, naked? I had to make him invisible just so I could walk by.\nOn 06/16/2003",
+      "Quentin, are you okay? You're talking funny. You're usually so smart and eloquent, and your lips do this cute thing when you talk. But I can't tell if they're doing that cute thing right now. Are they doing it?\nOn 05/26/2003",
+      "Yeah, we heard you the first time. Sheesh. What's the big deal? Did you hit your head or something?\nOn 06/04/2003",
+      "Maloof, why don't you stand up to these creeps?\nOn 05/16/2003",
+      "Huh. That dude is big.\nOn 06/17/2003"
+    ];
+    var milkaSelect = milkaArray[Math.floor(Math.random()*milkaArray.length)];
+    message.channel.sendMessage('Milka Phage said:');
+    message.channel.sendMessage(milkaSelect);
+  }
+
+  //messages asking for crystal's friendster lines
+  if (message.content.startsWith(chat + 'crystal')) {
+    var crystalArray = [
+      "J.T. is the coolest! He is the best shot at camp! Probably the best shot in the world!!!! I'll bet he could PSI-Blast a... a... ant, off a...\nOn 06/17/2003",
+      "Yeah! Great idea, Clem! I'll bet he could PSI blast a ant off a speck of dust!\nOn 06/17/2003",
+      "From a MILLION miles away! Yayyyyy J.T. the ant killer!\nOn 06/17/2003",
+      "Hey, Franke! I like your picture! Lots of spirit! Hey, that gives me an idea! What you say we put together a cheerleading squad this year?\nOn 06/08/2003",
+      "Clem, you put the POINT in dissaPOINTed! :D! :D! :D!\nn 06/18/2003",
+      "Lili! OMFG!!! I know we haven't really gotten a chance to get know each other much this year, or last year. Or the year before that. But it sure was nice of you to let me get on your friends list anyway! I'll bet we have a lot of things in common, and that we'll be best friends some day! :D!!! See you at the campfire rally! <3 <3 <3 <3 Infinity!\nOn 05/21/2003",
+      "Hey that's a good idea! Let's have a wrestling team! I'd bet you'd be really good Clem! :D!\nOn 05/19/2003",
+      "ROFL! You nut!\nOn 05/19/2003",
+      "Elka sweetie, quick question: if Clem and I... if we \_weren't here\_ next year, would people say nice things about us? Or mean things?\nOn 06/16/2003",
+      "Yeah, a freak accident. Would they be like, \"I'm so glad those two are gone?\" or would they cry and cry and wish they were nicer to us?\nOn 06/17/2003",
+      "Clem is the best friend a girl could have. We do everything together. Whether it's sports, or running, or cheering, or horseback riding, or telekinetic canoeing, or the obstacle course, or climbing trees, or jumping hand in hand off of the roof of the main lodge to end it all, or snorkeling, or singing at the campfire, everything's better with Clem!!!!!!!!\nOn 05/27/2003",
+      "Hi Clem! Just checking in to say you're #1 in my book!!!!!!!!\nOn 05/28/2003",
+      "Sounds like a good plan, Mikhail! May the best man win!!!!!!!!\nOn 05/29/2003",
+      "I just thought of something else I like about Clem: HE ROCKS!!!!!!!!\nOn 05/31/2003",
+      "Pom-poms can't give you a winning attitude, Benny. It has to come from within! :D!!!!!!!!\nOn 05/31/2003",
+      "Hey, good one Chops! The head band is super neato! That's something great about Clem I hadn't thought of yet! :D!!!!!!!!\nOn 06/11/2003",
+      "Clem! OMG! You HAVE to be my partner for the scavenger hunt! HAVE to! HAVE to! HAVE to! If you don't I swear I'll throw my self into a wood chipper! Please please please!!!!!!!!\nOn 06/13/2003",
+      "I would but I'm just excited about Clem! He's the greatest!!!!!!!\nOn 06/14/2003",
+      "Ha ha ha ha!!!!!!!!!!!!!\n\nGood one, Franke!!!!!!!!!!!\n\nAre you secretly a stand-up comedian? :O!\n\nJust kidding!!!! :D!\n\nWell I try not to speculate to much about the future, because no one knows what it holds (except that it's going to be GREAT!!!!!!!!) but I think Clem and I do make a great team, and maybe someday who knows?? :D!\n\nBut for now we both agree that we're too young to go steady :D and we'd rather save ourselves for later, maybe when our outrageous sprit for living has died down a little bit :/ and we slip into that phase of one's life where you start giving up on your dreams :( and all the amazing things you thought you were going to do, and you just start to panic that you're going to die alone :O and you feel like grabbing onto the first decent person you can find and tricking them into marriage so that at least you have someone to call 911 for you when your hip breaks and you can't reach the phone.",
+      "Clem is the best! The very, very best!\nOn 06/18/2003",
+      "Wow, Milka! You're so lucky that you can go invisible so much and snoop around into other people's business. That's so great for you!!!!!!!\nOn 06/20/2003"
+    ];
+    var crystalSelect = crystalArray[Math.floor(Math.random()*crystalArray.length)];
+    message.channel.sendMessage('Crystal Snagrash said:');
+    message.channel.sendMessage(crystalSelect);
+  }
 
   if (message.content.startsWith(prefix + 'foo')) {
     message.channel.sendMessage('bar');
