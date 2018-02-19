@@ -579,6 +579,131 @@ client.on('message', message => {
     message.channel.sendMessage("Crystal Snagrash said:");
     message.channel.sendMessage("God fucking damnit!\nOn 06/13/2003");
   }
+  
+    //messages asking for kitty's friendster lines
+  if (message.content.startsWith(chat + 'kitty')) {
+    var kittyArray = [
+      "Hmmm. I could get into that.\nOn 05/17/2003",
+      "Don't sweat Lutefisk, Franke. He's just bitter about losing his girlfriend to J.T.\nOn 06/11/2003",
+      "Just ignore it, baby.\nOn 06/11/2003",
+      "This is my girl. No body better mess with my girl. She bites!\nOn 05/25/2003",
+      "Oh, go take an inviso-hike, Nell.\nOn 05/29/2003",
+      "Hate to break your heart girlfriend, but I just saw your boy Elton here making time with Milka Phage out behind Mr. Cruller's hut. It looked like he was trying to read her mind--with his tongue! Yeah, baby, woo!\nOn 05/29/2003",
+      "Vernon, you left out the part where you peed your pants.\nOn 05/17/2003",
+      "I could ask her for you, Vern. Hey, Franke! When you going to stop being a tease?\nOn 05/29/2003",
+      "Holy crap girlfriend. Settle down.\nOn 06/14/2003",
+      "Elton, Franke is just kidding.\n\nBut seriously, sweetie--IS our homework done yet? Or was it eaten by that hulking lungfish you're always talking about?\n\nxoxoxx!\nOn 05/17/2003",
+      "Is it just me, or is Dogen kind of sexy?\nOn 06/05/2003",
+      "Oh yeah, I remember that! Dawn of the Naked Vernon. All I can say is Franke, you are one lucky woman!\nOn 06/08/2003",
+      "Phoebe, I want to be in your band.\nOn 06/08/2003",
+      "\n\nHi Quentin. Thanks for the flower. ;)\nOn 06/11/2003",
+      "Dude, your crush on Quentin is sweet, but give it up. He loves me. Just because I tossed him aside doesn't mean you should be diggin' through my trash, chika.\n\nP.S. I was wondering if you could settle a bet I have with Franke. She said that you had your own secret crazy language, like Jodie Foster had in Nell where she was retarded in the woods. Is that true?\nOn 05/18/2003",
+      "Yeah, I heard that too. So what were you saying?\nOn 05/18/2003",
+      "\"Gimmie Bugs!\" hee hee hee!\nOn 05/18/2003",
+      "Oh, lighten up Counselor Troy, will ya?\nOn 05/18/2003",
+      "Gross.\nOn 06/08/2003",
+      "Okay, great. It's a plan. You two guys go down to the lake, take off your clothes and jump in the water. We hot ladies will be down there in a minute. We have to freshen up!\nOn 06/12/2003",
+      "Maloof. Get over here. Franke and I want to dress you up like a girl again.\nOn 05/14/2003",
+      "Franke, shhh.\nOn 06/16/2003",
+      "Hey, when are you going to jam again, Chops? Franke and I wanna come over and sing.\nOn 06/02/2003"
+    ];
+    var kittySelect = kittyArray[Math.floor(Math.random()*kittyArray.length)];
+    message.channel.sendMessage('Kitty Bubai said:');
+    message.channel.sendMessage(kittySelect);
+  }
+
+  //messages asking for vernon's friendster lines
+  if (message.content.startsWith(chat + 'vernon')) {
+    var vernonArray = [
+      "Okay, okay. Everybody likes J.T. and so do I! Don't get me wrong! But sometimes, I'm just saying... sometimes maybe the harmonica jam sessions at the campfire go a liiiiittle long, is all I'm saying. Sometimes somebody's got a really good story they want to tell, but they can't because it's all harmonica, harmonica, harmonica, and I think honestly, just a tip--people would like to hear maybe more stories, less harmonica. Not that I don't love it of course. The harmonica. But who doesn't love a good story?\non 06/04/2003",
+      "Hey, Franke. Don't worry, I haven't told anyone yet about that stuff we talked about.\nOn 05/27/2003",
+      "Hey, if Franke's cheering, I'll play anything!\nOn 06/11/2003",
+      "The other day I was just trying to get some milk at lunch, and I said, \"Hey, Micky. Could you pass the milk please?\" And he said, \"What? You challenge me?\" And I said, \"No, no. I just want the milk.\" And he said, \"You want milk? Come and get it!\" And then I swear he roared like a bear. It was so embarrasing. Can you believe that? And people say I'm annoying! At least I know to keep my mouth shut.\n\nSo I just moved to the far side of the lodge, and I ended up putting grape juice on my cereal instead. And you know what? Is was not bad!\nOn 05/17/2003",
+      "Yeah, Kitty, so watch your-- hey, really? Really Franke? Are we officially boyfriend girlfriend now? Oh, man! Let's make T-shirts!\nOn 05/17/2003",
+      "Oh, right. Yeah, of course. I can do that. I can do that. But, oh, I already have the t-shirts made, so they're ready to go, whenever. I hope I spelled \"forever\" right.\nOn 05/17/2003",
+      "Hey, Elka. Just so you know, your precognition skills are not infallible. For instance, remember when we rode the bus into camp together? I told you that story about how I had those two goldfish that kind of looked alike and how no one but me could tell them apart (remember?) and then we got off the bus and you predicted that I was going to annoy everyone at camp? Well, you were wrong! Everything's going great. In fact, I kind of have a girlfriend almost. You know that girl Franke? Hey, do you have any forsighings or whatever about me and her? Like, when we're going to be able to actually tell people about us? And when we will start holding hands and stuff?\nOn 05/28/2003",
+      "Oh, right. You can read this too, huh. Well um. Let's just.. uh.. hm... I think the computer here in the lodge is going on the fritz... seems to be... krrrr... breaking up...bzzz! hj#kjkow*owl gotta TX(uehj go!\nOn 05/30/2003",
+      "Clem is cool. Talks a lot, but he's basically cool.\nOn 06/12/2003",
+      "Elton! That was awesome the other day when you beat Bobby at the telekinetic canoe races! How do you go so fast? Speaking of fast, did you know my dad was a race car driver? He was, kind of. He worked on the pit crew, actually, of one of the top ten race teams in the minor race circuit in the northern part of our state. Actually he worked more on the business side. He was really more on the side of the sponsor of the pit crew. Our sponsor was Tripe Insurance. Actually, my dad ran the shop, the insurance shop, who sponsored the pit crew of the racing team. But he was one of the most successful insurance actuaries in the state. Probably because he could see the future and everything.\n\nOkay gotta go. More stories later. I got a million of 'em! Keep it real!\nOn 05/16/2003",
+      "Dogen's a good listener. Even though he does wonder off sometimes while you're talking. He usually wanders back before I'm done.\nOn 06/04/2003",
+      "Oh, man. Chloe, you're the ONE person I can tell this story to who won't think I'm crazy. You weren't hear at camp last year so you don't know. Anyway, I was sleeping, and then all of a sudden there was this bright light shining in my eyes. I couldn't see who was holding it--it was these two bizarre creatures. One was little and had a really huge, alien ears, and the other creature was tall and had a bulbous, sort of mutant-shaped head. Anyway, they spoke to me. They said, \"VERNON TRIPE STAND UP!\" And I noticed that the tall one was holding a BB gun. I didn't know how they got that but I figured I'd better do what they said. So, I stood up and they said, \"WALK OUTSIDE,\" and I did, and then they said, \"CLIMB UP THAT FLAG POLE!\" And I did and they said, \"THROW DOWN YOUR CLOTHES STAY UP THERE UNTIL THE MOTHERSHIP COMES TO PICK YOU UP.\" I was so excited that I threw down my clothes right away (it makes sense that you have to travel naked-- That's how the Terminator does it) but the mother ship never came. And in the morning when the kids came out they laughed, but I was the one laughing (on the inside!) because I came closer to going on a space ship than any of them ever will.\n\nSo, pretty cool eh? Hope that doesn't make you too jealous.\nOn 06/06/2003",
+      "See? Nobody understands.\nOn 06/06/2003",
+      "Phoebe is a good listener. As long as you phrase your story in the form of a psychological problem for her to solve. Luckily I have her believing that I have a LOT of psychological problems, so I get a lot of her time.\nOn 06/07/2003",
+      "Hey, Phoebe. You haven't written me a testimonial yet. I've written you two!!\nOn 06/16/2003",
+      "Quentin and I hang out all the time. We're like best buds. We have a lot in common. I'll bet if I wore a scarf, you wouldn't even be able to tell us apart.\nOn 06/13/2003",
+      "Hey, Milka! I have a really good story to tell you. I was going to tell you yesterday but I couldn't find you anywhere. It was weird--I heard your voice in the TV lounge, but then when I went in there you weren't anywhere to be seen! And then later at your cabin, the same thing happened! Weird, huh? It's like I'm imagining hearing your voice all over camp. Maybe I'm going crazy. Oh, that reminds me about this time my aunt went crazy and thought she was a turtle. She moved really slowly for three days, and we thought it was funny until a loud noise startled her and she pulled her head down into her neck hole so far that we had to take her to the hospital and man if that ain't a good story in itself! But it's kind of long so I'll wait until next time I see you in person.\nOn 05/17/2003",
+      "Got Milka?\n\nHAHAHA. Get it? Kind of a play on words. Just though of it. Thought I'd share with the group. :)\nOn 05/19/2003",
+      "Hey, Crystal, I heard you've been a little bummed lately. If you need a good story to cheer you up, I'm your man!\nOn 06/05/2003",
+      "Count me in.\nOn 06/10/2003",
+      "Wooo! I'm there.\nOn 06/13/2003",
+      "Hey, Kitty. I can't get a hold of Franke. I figured you might know where she is because you guys are like, inseparable. Could you ask her if she has a partner yet for the scavenger hunt?\nOn 05/30/2003",
+      "Hey, Maloof! Did you ever hear the one about the boy who cried so hard his eyes shriveled up and turned into raisins? Seriously. He's going through eyeball-reinflation therapy right now. He can see, but crows think his eyes really are raisins, so he has to wear protective goggles to keep them from pecking his eyes out. True story. Like the kind of story that has a moral, if you're paying attention, you know?\n\nLike about how you should stop crying, maybe?\nOn 05/13/2003",
+      "Uh, hey Maloof. If you want, you can have some of these rice crispy treats my mom sent me.\nOn 06/12/2003",
+      "Hey, who doesn't like Chops? Nobody. Everybody loves chops. He's just that kind of guy--like me!\nOn 05/25/2003"
+    ];
+    var vernonSelect = vernonArray[Math.floor(Math.random()*vernonArray.length)];
+    message.channel.sendMessage('Vernon Tripe said:');
+    message.channel.sendMessage(vernonSelect);
+  }
+
+  //messages asking for crystal's friendster lines
+  if (message.content.startsWith(chat + 'maloof')) {
+    var maloofArray = [
+      "J.T. I love your work. I have some contract assignments I'd like to talk to you about. How's the whole \"have gun, will travel\" thing working out for you? Have you ever thought about taking it up a notch? Professional representation is the first step in that direction. Let's talk.\nOn 06/18/2003",
+      "Lili is the only person in camp who hasn't pushed me down so far this year. Except for that one time on accident, but she said she was sorry and even though it looked like she was laughing I believed her when she said she had something in her eye.\nOn 05/22/2003",
+      "People think Mikhail is really mean but he's nice. He doesn't hit or push or talk loud but he is really strong and he said that if people keep being mean to me and saying mean things that he can use telekimnesis to break every bone in their body and throw them into the lake and that person's mom and dad and the police and the fire department can look and look and look and they will never find that person because that person's bones will be ground up so much that fish will think it's fish food and eat it. Mikhail is really good at tetherball.\nOn 05/05/2003",
+      "Greetings, Mr. Zilch. I'm not sure if you were aware, but I am now Misha's exclusive agent. If you have some contract work you need then we can talk about rates. In the future, I'd prefer it if you routed all communication through me.\nOn 06/22/2003",
+      "Elka, together we could really do some good at this camp. You could predict where and when Bobby Ziltch is going to strike next, and then Mikhail and I show up and offer protection. A powerful service package, you have to admit. Why don't you think about it and get back to me?\nOn 06/19/2003",
+      "Some day, all jocks will pay.\nOn 06/09/2003",
+      "Elton is usually nice, but once I told him I thought Lili was pretty and he got really mad at me. Elton, I will forgive you if you let me have 3 dream fluffs. And for 2 more dream fluffs, I won't tell Lili what you said.\nOn 05/27/2003",
+      "Bobby. Come around some time and we can see if there's a place for you in my new organization. This is a dangerous time to be a lone gun, you know?\nOn 06/15/2003",
+      "Dogen, you make me proud to be short..\nOn 06/06/2003",
+      "Chloe, I know what it's like to be small. If you're interested at all in hearing about some protective services, I represent a client who I think would be PERFECT for you. I'll have my assistant come by your cabin to setup an appointment. Oh, that reminds me. I'm taking applications for an assistant position.\nOn 06/17/2003",
+      "My friends, Benny did a good job running this place for the past couple seasons. But I'm afraid he represents a bygone regime. Anyone seeking out protection from Mr. Fideleo should really reconsider. Let's talk.\nOn 06/22/2003",
+      "Quentin gets a special deal. He never picked on me before I had Mikhail on retainer, so he gets free protection.\n\nFor 1 month.\nOn 06/222003",
+      "Hi Milka. If you teach me invisibility, I'll get Mikhail to beat up the psychadet of your choosing. Unless you chose someone who is currently a protected client.\nOn 06/18/2003",
+      "Ms. Snagrash, I do offer protective services, but I don't think I am equipped to protect someone from themselves. Let me speak to my associates and see what kind of custom package I can come up with for you..\nOn 06/20/2003",
+      "Kitty, I'd advise you to stay away from Mikhail. I know you are trying to confuse him, and manipulate him to your own purposes. But trust me, his allegiance is to me. Don't make me prove it.\nOn 06/09/2003",
+      "I hear a lot about these psychic fists of yours, Mr. Sweetwind. I hope to see them someday, although hopefully not used against one of my clients. What would be best for both of us, and our families, would be if we could have some sort of a partnership going forward, not a messy and unproductive competition. Let's talk.\nOn 05/30/2003"
+    ];
+    var maloofSelect = maloofArray[Math.floor(Math.random()*maloofArray.length)];
+    message.channel.sendMessage('Maloof Canola said:');
+    message.channel.sendMessage(maloofSelect);
+  }
+
+  //messages asking for chops's friendster lines
+  if (message.content.startsWith(chat + 'melvin') || message.content.startsWith(chat + 'chops')) {
+    var chopsArray = [
+      "This is my main hombre. Like the famous desperadoes of old films, this bandit does not, in fact, need any stinking badges. Watch out, ladies, this one is on fire. He is a sure shot in every sense of the word. He is a cool customer. Seriously, I don't know if I would have ever made it at this camp if it weren't for my main man J.T. I would love to ride a mile in his hat, but I cannot, due to a very serious medical condition whereby my hair is too intense and voluminous.\nOn 05/16/2003",
+      "Sometimes I think J.T. and I are like, the same person. Like Siamese twins, separated at birth. Re-conjoinified, not in body, but in our mutual chillness. \nOn 06/03/2003",
+      "J.T. what up? You missed practice. Phoebe got so mad she burned up another pair of sticks.\nOn 06/16/2003",
+      "Hey, J.T. where are you? I see more of Milka these days than you, and she's invisible most of the time. Time to check in with home base. Meet me at the secret spot.\nOn 06/19/2003",
+      "J.T. are you there? Come in, J.T. come in! Has she kidnapped you bro? Are you under some sort of evil voodoo/Barbie doll curse?\nOn 06/21/2003",
+      "J.T. red alert! RED ALERT! Speak to me!\nOn 06/22/2003",
+      "If you don't play it on ice with a stick, it ain't a sport.\nOn 06/15/2003",
+      "Lili, where ya been? You never hang out anymore. Do you have a boyfriend? Eh? You cheatin on me? Heh.\nOn 05/24/2003",
+      "Hey, Elka. Do you know where my man J.T. is? I can't find him anywhere.\nOn 06/18/2003",
+      "Look Doom, I know you guys are dating and all, but let the guy come up for air sometime!\nOn 06/20/2003",
+      "DOOOOOOOOOOOOOOM!\n\nLET MY PEOPLE GO!\nOn 06/21/2003",
+      "Hey, Clem. Where did you get that headband? I like it.\nOn 06/11/2003",
+      "Elton, Elton!\n\nKeeps the ladies Meltin'!.\nOn 05/26/2003",
+      "Go Elton! It's your birthday!\nOn 05/28/2003",
+      "The hat does not kill people, eh? The Boolean brain is what kills people. The hat is the thin foil line that separates us from... the headless us.\nOn 06/20/2003",
+      "Chloe likes me because I come down to this place from a cold, mostly empty world where the beings talk funny.\n\nIt's called Canada! HAHAHA! See? We can make fun of ourselves. We're not all sensitive about it.\nOn 06/15/2003",
+      "Uh, no offense my friend, but how do you expect to sing? You're mouth is kinda busy with the harmonica.\n\nOr it used to be. These days it's more busy with Elka Doom.\nOn 06/11/2003",
+      "Yeah, that's why I missed it--I was out looking for J.T.\nOn 06/24/2003",
+      "Me too.\nOn 06/28/2003",
+      "People say Milka's a freak, but I like to think it's more that she's \"Freakay.\"\n\nI have no proof of this. It's just a theory. But I like to think it.\nOn 05/16/2003",
+      "Hey, Milka, are you okay? That was some crazy shaking you did at dinner the other night. You didn't let Nils slip you any of that Yoo-Hoo, did you? That s will f you straight up.\nOn 05/19/2003",
+      "Not cool, Benjaman.\nOn 06/04/2003",
+      "I can wiggle my ears. You can't see it, but just trust me.\nOn 06/16/2003",
+      "Maloof, you the man. Or at least you will be, once you stop acting like a baby.\nOn 05/25/2003",
+      "What the big guy says is definitely cool with me.\nOn 05/30/2003"
+    ];
+    var chopsSelect = chopsArray[Math.floor(Math.random()*chopsArray.length)];
+    message.channel.sendMessage('Melvin Sweetwind said:');
+    message.channel.sendMessage(chopsSelect);
+  }
 
   if (message.content.startsWith(prefix + 'foo')) {
     message.channel.sendMessage('bar');
