@@ -41,8 +41,8 @@ client.on('message', message => {
       "I don't know what this talk is all about chops. Elka here is a nice girl, but she's duller than ditchwater and I'm getting a little tired of her takin' up all my time. The posse is still just you and me. Always has been, always will be, and no fast-talkin' filly is gonna change that.\nOn 6/20/2003"
     ];
     var jtSelect = jtArray[Math.floor(Math.random()*jtArray.length)];
-    message.channel.sendMessage('James Theodore Hoofburger said:');
-    message.channel.sendMessage(jtSelect);
+    message.channel.sendMessage('James Theodore Hoofburger said: ' + jtSelect);
+    //message.channel.sendMessage(jtSelect);
   }
 
   //messages asking for franke's friendster lines
@@ -76,8 +76,8 @@ client.on('message', message => {
       "Yeah! I've been practicing my Girl From Ipanema thing....\nOn 6/03/2003"
     ];
     var frankeSelect = frankeArray[Math.floor(Math.random()*frankeArray.length)];
-    message.channel.sendMessage('Franke Athens said:');
-    message.channel.sendMessage(frankeSelect);
+    message.channel.sendMessage('Franke Athens said: ' + frankeSelect);
+    //message.channel.sendMessage(frankeSelect);
   }
     
   
@@ -108,8 +108,8 @@ client.on('message', message => {
 
     ];
     var nilsSelect = nilsArray[Math.floor(Math.random()*nilsArray.length)];
-    message.channel.sendMessage('Nils Lutefisk said:');
-    message.channel.sendMessage(nilsSelect);
+    message.channel.sendMessage('Nils Lutefisk said: ' + nilsSelect);
+    //message.channel.sendMessage(nilsSelect);
   }
   
     //messages asking for lili's friendster lines
@@ -127,8 +127,8 @@ client.on('message', message => {
       "When Chops plays the guitar, I almost, ALMOST like people.\nOn 5/27/2003"
     ];
     var liliSelect = liliArray[Math.floor(Math.random()*liliArray.length)];
-    message.channel.sendMessage('Lili Zanotto said:');
-    message.channel.sendMessage(liliSelect);
+    message.channel.sendMessage('Lili Zanotto said: '\n + liliSelect);
+    //message.channel.sendMessage(liliSelect);
   }
   
     //messages asking for mikhail's friendster lines
