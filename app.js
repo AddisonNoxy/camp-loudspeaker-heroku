@@ -41,8 +41,8 @@ client.on('message', message => {
       "I don't know what this talk is all about chops. Elka here is a nice girl, but she's duller than ditchwater and I'm getting a little tired of her takin' up all my time. The posse is still just you and me. Always has been, always will be, and no fast-talkin' filly is gonna change that.\nOn 6/20/2003"
     ];
     var jtSelect = jtArray[Math.floor(Math.random()*jtArray.length)];
-    message.channel.sendMessage('James Theodore Hoofburger said: ');
-    message.channel.sendMessage(jtSelect);
+    message.channel.sendMessage('James Theodore Hoofburger said:\n ' + jtSelect);
+    //message.channel.sendMessage(jtSelect);
   }
 
   //messages asking for franke's friendster lines
@@ -76,8 +76,8 @@ client.on('message', message => {
       "Yeah! I've been practicing my Girl From Ipanema thing....\nOn 6/03/2003"
     ];
     var frankeSelect = frankeArray[Math.floor(Math.random()*frankeArray.length)];
-    message.channel.sendMessage('Franke Athens said: ');
-    message.channel.sendMessage(frankeSelect);
+    message.channel.sendMessage('Franke Athens said:\n ' + frankeSelect);
+    //message.channel.sendMessage(frankeSelect);
   }
     
   
@@ -108,7 +108,7 @@ client.on('message', message => {
 
     ];
     var nilsSelect = nilsArray[Math.floor(Math.random()*nilsArray.length)];
-    message.channel.sendMessage('Nils Lutefisk said: ' + nilsSelect);
+    message.channel.sendMessage('Nils Lutefisk said:\n ' + nilsSelect);
     //message.channel.sendMessage(nilsSelect);
   }
   
@@ -153,8 +153,8 @@ client.on('message', message => {
       "Okay, now this should be fun. He looks small, but he has the psychic fists. Not good at picking things up like mine, but good for the punching and the hitting. Like big bear claws. He's like a little cub with the paws of a grizzly. Probably best to pull chair from audience, and hit him on back of head while he's turned away to wave at crowd.\nOn 6/18/2003"
     ];
     var mikhailSelect = mikhailArray[Math.floor(Math.random()*mikhailArray.length)];
-    message.channel.sendMessage('Mikhail Bulgakov said:');
-    message.channel.sendMessage(mikhailSelect);
+    message.channel.sendMessage('Mikhail Bulgakov said:\n ' + mikhailSelect);
+    //message.channel.sendMessage(mikhailSelect);
   }
   
     //messages asking for elka's friendster lines
@@ -206,8 +206,8 @@ client.on('message', message => {
     
     ];
     var elkaSelect = elkaArray[Math.floor(Math.random()*elkaArray.length)];
-    message.channel.sendMessage('Elka Doom said:');
-    message.channel.sendMessage(elkaSelect);
+    message.channel.sendMessage('Elka Doom said:\n ' + elkaSelect);
+    //message.channel.sendMessage(elkaSelect);
   }
   
    //messages asking for clem's campster lines
@@ -227,7 +227,7 @@ client.on('message', message => {
       "No, I'm terrible at canoeing. My dad says I'm a total idiot when it comes to canoeing. And most other things. He said he'd rather ride a seal into a pool of sharks than ride in a canoe into a lake with me. Sometimes I wonder if he's right--if I am to stupid for this world.\nOn 5/24/2003",
       "Totally. But I guess Elton's pretty stoked.\nOn 5/24/2003",
       "And his picture perfect childhood full of love and support! Yeah, Elton!\nOn 5/24/2003",
-      "I wish I were special like Dogen! And I had a hat that could kill people!\on 6/18/2003",
+      "I wish I were special like Dogen! And I had a hat that could kill people!\nOn 6/18/2003",
       "But I'd only use it for good!\nOn 6/18/2003",
       "Crystal, I think he means hurting other people.\nOn 6/13/2003",
       "Hey hey hey there! That's no way to talk! We can still have a club! Just you and me! My brain hurts too! I want to die too! Sometimes. But then again sometimes I feel GGGGGGGRRRRREEEEEAAAT!!!\nOn 6/13/2003",
@@ -248,8 +248,8 @@ client.on('message', message => {
       "Where was I? Oh yeah...\nHip hip, hurray!\nOn 6/20/2003",
     ];
     var clemSelect = clemArray[Math.floor(Math.random()*clemArray.length)];
-    message.channel.sendMessage('Clem Foote said:');
-    message.channel.sendMessage(clemSelect);
+    message.channel.sendMessage('Clem Foote said:\n ' + clemSelect);
+    //message.channel.sendMessage(clemSelect);
   }
   
     //messages asking for elton's friendster lines
@@ -294,8 +294,8 @@ client.on('message', message => {
       "Hey, Lili. I'll bet you didn't know I play music too! I play the accordion. I mostly know sailor songs, but I just got the sheet music for that new one by that band \"50 Cent\" so maybe when I learn that I could come over and show you?\nOn 5/28/2003"
     ];
     var eltonSelect = eltonArray[Math.floor(Math.random()*eltonArray.length)];
-    message.channel.sendMessage('Elton Fir said:');
-    message.channel.sendMessage(eltonSelect);
+    message.channel.sendMessage('Elton Fir said:\n ' + eltonSelect);
+    //message.channel.sendMessage(eltonSelect);
   }
   
   //messages asking for bobby's friendster lines
@@ -336,8 +336,8 @@ client.on('message', message => {
       "hm... solid. Weak ending, but all in all, a good effort.\nOn 6/16/2003"
     ];
     var bobbySelect = bobbyArray[Math.floor(Math.random()*bobbyArray.length)];
-    message.channel.sendMessage('Bobby Zilch said:');
-    message.channel.sendMessage(bobbySelect);
+    message.channel.sendMessage('Bobby Zilch said:\n ' + bobbySelect);
+    //message.channel.sendMessage(bobbySelect);
   }
   
     //messages asking for dogen's friendster lines
@@ -360,8 +360,8 @@ client.on('message', message => {
       "Chops has the weirdest hat on that I've ever seen..\nOn 6/17/2003"
     ];
     var dogenSelect = dogenArray[Math.floor(Math.random()*dogenArray.length)];
-    message.channel.sendMessage('Dogen Boole said:');
-    message.channel.sendMessage(dogenSelect);
+    message.channel.sendMessage('Dogen Boole said:\n ' + dogenSelect);
+    //message.channel.sendMessage(dogenSelect);
   }
   
     //messages asking for chloe's friendster lines
@@ -382,8 +382,8 @@ client.on('message', message => {
       "Hmm. Russians do make good navigators... Tell you what, Maloof. You can be on the crew if your friend comes in the package.\nOn 6/19/2003"
     ];
     var chloeSelect = chloeArray[Math.floor(Math.random()*chloeArray.length)];
-    message.channel.sendMessage('Chloe Barge said:');
-    message.channel.sendMessage(chloeSelect);
+    message.channel.sendMessage('Chloe Barge said:\n ' + chloeSelect);
+    //message.channel.sendMessage(chloeSelect);
   }
 
   //messages asking for benny's friendster lines
@@ -421,8 +421,8 @@ client.on('message', message => {
       "See you later, Barf Scarf! (that ones for Quentin.)\nOn 6/16/2003"
     ];
     var bennySelect = bennyArray[Math.floor(Math.random()*bennyArray.length)];
-    message.channel.sendMessage('Benny "The Nose" Fideleo said:');
-    message.channel.sendMessage(bennySelect);
+    message.channel.sendMessage('Benny "The Nose" Fideleo said:\n ' + bennySelect);
+    //message.channel.sendMessage(bennySelect);
   }
   
     //messages asking for phoebe's friendster lines
@@ -451,8 +451,8 @@ client.on('message', message => {
       "Sounds like inspirational Christian Rock. How about \"The Firestarters?\"\nOn 6/09/2003",
     ];
     var phoebeSelect = phoebeArray[Math.floor(Math.random()*phoebeArray.length)];
-    message.channel.sendMessage('Phoebe Love said:');
-    message.channel.sendMessage(phoebeSelect);
+    message.channel.sendMessage('Phoebe Love said:\n ' + phoebeSelect);
+    //message.channel.sendMessage(phoebeSelect);
   }
 
   //messages asking for quentin's friendster lines
@@ -483,8 +483,8 @@ client.on('message', message => {
       "The Whispering Rockers!\"\nOn 06/10/2003"
     ];
     var quentinSelect = quentinArray[Math.floor(Math.random()*quentinArray.length)];
-    message.channel.sendMessage('Quentin Hedgemouse said:');
-    message.channel.sendMessage(quentinSelect);
+    message.channel.sendMessage('Quentin Hedgemouse said:\n ' + quentinSelect);
+    //message.channel.sendMessage(quentinSelect);
   }
 
   //messages asking for milka's friendster lines
@@ -513,8 +513,8 @@ client.on('message', message => {
       "Huh. That dude is big.\nOn 06/17/2003"
     ];
     var milkaSelect = milkaArray[Math.floor(Math.random()*milkaArray.length)];
-    message.channel.sendMessage('Milka Phage said:');
-    message.channel.sendMessage(milkaSelect);
+    message.channel.sendMessage('Milka Phage said:\n ' + milkaSelect);
+    //message.channel.sendMessage(milkaSelect);
   }
 
   //messages asking for crystal's friendster lines
@@ -570,8 +570,8 @@ client.on('message', message => {
       "Oh he's big, b-i-g!\n\nAnd he's bad, b-a-d!\n\nand he's boss, b-o-s-s, b-o-s-s, he's BOSS.\nOn 06/20/2003"
     ];
     var crystalSelect = crystalArray[Math.floor(Math.random()*crystalArray.length)];
-    message.channel.sendMessage('Crystal Snagrash said:');
-    message.channel.sendMessage(crystalSelect);
+    message.channel.sendMessage('Crystal Snagrash said:\n ' + crystalSelect);
+    //message.channel.sendMessage(crystalSelect);
   }
   
   //Had to be done.
@@ -608,8 +608,8 @@ client.on('message', message => {
       "Hey, when are you going to jam again, Chops? Franke and I wanna come over and sing.\nOn 06/02/2003"
     ];
     var kittySelect = kittyArray[Math.floor(Math.random()*kittyArray.length)];
-    message.channel.sendMessage('Kitty Bubai said:');
-    message.channel.sendMessage(kittySelect);
+    message.channel.sendMessage('Kitty Bubai said:\n ' + kittySelect);
+    //message.channel.sendMessage(kittySelect);
   }
 
   //messages asking for vernon's friendster lines
@@ -642,8 +642,8 @@ client.on('message', message => {
       "Hey, who doesn't like Chops? Nobody. Everybody loves chops. He's just that kind of guy--like me!\nOn 05/25/2003"
     ];
     var vernonSelect = vernonArray[Math.floor(Math.random()*vernonArray.length)];
-    message.channel.sendMessage('Vernon Tripe said:');
-    message.channel.sendMessage(vernonSelect);
+    message.channel.sendMessage('Vernon Tripe said:\n ' + vernonSelect);
+    //message.channel.sendMessage(vernonSelect);
   }
 
   //messages asking for crystal's friendster lines
@@ -667,8 +667,8 @@ client.on('message', message => {
       "I hear a lot about these psychic fists of yours, Mr. Sweetwind. I hope to see them someday, although hopefully not used against one of my clients. What would be best for both of us, and our families, would be if we could have some sort of a partnership going forward, not a messy and unproductive competition. Let's talk.\nOn 05/30/2003"
     ];
     var maloofSelect = maloofArray[Math.floor(Math.random()*maloofArray.length)];
-    message.channel.sendMessage('Maloof Canola said:');
-    message.channel.sendMessage(maloofSelect);
+    message.channel.sendMessage('Maloof Canola said:\n ' + maloofSelect);
+    //message.channel.sendMessage(maloofSelect);
   }
 
   //messages asking for chops's friendster lines
@@ -701,8 +701,8 @@ client.on('message', message => {
       "What the big guy says is definitely cool with me.\nOn 05/30/2003"
     ];
     var chopsSelect = chopsArray[Math.floor(Math.random()*chopsArray.length)];
-    message.channel.sendMessage('Melvin Sweetwind said:');
-    message.channel.sendMessage(chopsSelect);
+    message.channel.sendMessage('Melvin Sweetwind said:\n ' + chopsSelect);
+    //message.channel.sendMessage(chopsSelect);
   }
 
   if (message.content.startsWith(prefix + 'foo')) {
