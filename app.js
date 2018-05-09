@@ -127,8 +127,8 @@ client.on('message', message => {
       "When Chops plays the guitar, I almost, ALMOST like people.\nOn 5/27/2003"
     ];
     var liliSelect = liliArray[Math.floor(Math.random()*liliArray.length)];
-    message.channel.sendMessage('Lili Zanotto said: ');
-    message.channel.sendMessage(liliSelect);
+    message.channel.sendMessage('Lili Zanotto said:\n ' + liliSelect);
+    //message.channel.sendMessage(liliSelect);
   }
   
     //messages asking for mikhail's friendster lines
