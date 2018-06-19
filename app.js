@@ -726,6 +726,13 @@ client.on('message', message => {
       "These tests are unauthorized, though, so I can't actually ask you to come. But if you happen to drop in... well, what can I do?",
       "Let me just give you this. Remember; your talents will always set you apart, Razputin."
       "Sometimes, isolation is a good thing. It can lead to important discoveries.",
+      "Science, Razputin, THAT is what we practice down here. Not parlor tricks. If you are serious about exploring the possibilities of your mind, step up to the Brain Tumbler and we will begin.",
+      "Aaah, you're ready for the Brain Tumbler. With this device, we will send you deep into your own psyche, where you should find unparalleled insight and power.",
+      "Now just relax. This will not hurt. Unless something really very bad happens.",
+      "Not yet. You are still traveling through the astral plane.",
+      "This is a tiny corner of what we call the 'collective unconscious,' a place in which all of our unconscious minds are connected.",
+      "You have just begun your training, Razputin, so many of the connections with other minds are still not developed for you and those doorways remain just out of reach.",
+      "But the more you explore the mental world, the more connections you will form. Right now the only unconscious world you can enter is that one.",
       
       ]
     var sashaSelect = sashaArray[Math.floor(Math.random()*sashaArray.length)];
