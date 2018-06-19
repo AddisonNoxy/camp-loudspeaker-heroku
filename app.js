@@ -8,6 +8,7 @@ client.on("ready",() => {
 
 var prefix = "camp!"
 var chat = "fr!"
+var game = "vc!"
 client.on('message', message => {
   if (!message.content.startsWith(prefix) && !message.content.startsWith(chat)) return;
   console.log('Message received!');
@@ -707,6 +708,28 @@ client.on('message', message => {
 
   if (message.content.startsWith(prefix + 'foo')) {
     message.channel.sendMessage('bar');
+  }
+  
+  //Start listing in-game dialogue and message board notices
+  
+  //Sasha lines
+  if (message.content.starsWith(game + "sasha")) {
+    var sashaArray = [
+      "Oh, Morry.",
+      "Formation!",
+      "What IS it?",
+      "Compelling.",
+      "You've broken into a highly classified remote government training facility.",
+      "We need to have this young man taken from here immediately.",
+      "But he has mental defenses like I've never seen in someone so young. If I could just get him in my lab for some experiments, I'm sure he could withstand more than the others.",
+      "Your performance, young cadet, was oustanding. I'd like you to report to my lab for some advanced training",
+      "These tests are unauthorized, though, so I can't actually ask you to come. But if you happen to drop in... well, what can I do?",
+      "Let me just give you this. Remember; your talents will always set you apart, Razputin."
+      "Sometimes, isolation is a good thing. It can lead to important discoveries.",
+      
+      ]
+    var sashaSelect = sashaArray[Math.floor(Math.random()*sashaArray.length)];
+    message.channel.sendMessage('Sasha: ' + sashaSelect);
   }
 });
 
